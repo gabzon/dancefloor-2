@@ -71,7 +71,6 @@ $schedule = $dancefloor_options['schedule'];
           </div>
       </div>
 
-      @include('partials.content-page')
       <br>
       <div class="row">
           @php( $mon = Course::get_courses_by_day('mon') )
@@ -145,6 +144,9 @@ $schedule = $dancefloor_options['schedule'];
           @endif
       </div>
     @endwhile
+
+    <br>
+    @include('partials.content-page')
 @endsection
 
 
