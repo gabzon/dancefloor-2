@@ -30,7 +30,7 @@ $query = new WP_Query( $args );
     <div class="row" id="landing-grid">
       @if ($query->have_posts())
         @while ($query->have_posts()) @php(($query->the_post()))
-          <div class="col-md-4">
+          <div class="col-md-4 mb3">
             @php( $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ) )
             {{-- @php( $img_type = get_image_type($image) ) --}}
             <a href="{{ the_permalink() }}" >
