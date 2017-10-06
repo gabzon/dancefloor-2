@@ -22,8 +22,8 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * Footer Social icons improved
 * Footer contact information centered
 * Teachers template improved (bootstrap grid, and card, with hover effect)
-* Pricing page improved
 * Upgrade from Sage 8 to Sage 9
+* Price page updated (new design)
 
 ## Version 1
 

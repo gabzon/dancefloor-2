@@ -3,11 +3,9 @@
 @php( $bank_details = $dancefloor_options['bank_details'] )
 
 <article @php(post_class())>
-  <br>
   <header>
     <h1 class="entry-title">{{ get_post_meta($post->ID,'course_title',true) }}</h1>
   </header>
-  <br>
   <div class="entry-content">
 
     {{--  Alert Message --}}
