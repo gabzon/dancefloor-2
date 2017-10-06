@@ -5,5 +5,11 @@
 .show > .nav-pills .banner .nav a,
 .banner .nav .show > .nav-pills a {
   color: #fff;
-  background-color: #be2e37;
+  background-color: #e7040f;
+}
+
+.nav-pills .nav-link,
+.nav-pills .banner .nav a,
+.banner .nav .nav-pills a {
+  border-radius: 0;
 }
