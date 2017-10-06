@@ -39,6 +39,7 @@ a.btn-social, .btn-social { padding-top: 12px; }
 // WP_Query arguments
 $args = [
   'post_type' => ['df_video'],
+  'posts_per_page' => -1,
 ];
 
 // The Query
@@ -113,7 +114,7 @@ Evenements
     {{-- Restore original Post Data --}}
     @php( wp_reset_postdata() )
 
-    @include('partials.content-page')
+    {{-- @include('partials.content-page') --}}
     <br>
     <br>
   @endwhile
