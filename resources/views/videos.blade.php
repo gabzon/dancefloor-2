@@ -50,12 +50,12 @@ $query = new WP_Query( $args );
     @include('partials.page-header')
     {{-- The Loop --}}
     <div id="filters">
-      <button class="btn btn-outline-dark mv1" data-filter="*">show all</button>
+      <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4" data-filter="*">show all</button>
       @php
       $terms = get_terms();
       @endphp
       @foreach ($terms as $t)
-        <button class="btn btn-outline-dark mv1" data-filter=".{{$t->slug}}">{{$t->name}}</button>
+        <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box" data-filter=".{{$t->slug}}">{{$t->name}}</button>
       @endforeach
     </div>
     <br>
