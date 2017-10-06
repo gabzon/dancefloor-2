@@ -8,3 +8,9 @@
   background: black;
   color: white;
 }
+
+#filters button:active,
+#filters button.is-checked {
+  background-color: black;
+  color: white;
+}

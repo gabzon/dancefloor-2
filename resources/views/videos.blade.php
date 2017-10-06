@@ -70,7 +70,7 @@ Evenements
     @include('partials.page-header')
     {{-- The Loop --}}
     <div id="filters">
-      <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center ph3 pv2 ba border-box" data-filter="*">show all</button>
+      <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center ph3 pv2 ba border-box is-checked" data-filter="*">show all</button>
       @php
       $terms = get_terms([
         'taxonomy' => 'category',
