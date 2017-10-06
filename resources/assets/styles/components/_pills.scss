@@ -1,0 +1,9 @@
+.nav-pills .nav-link.active,
+.nav-pills .banner .nav a.active,
+.banner .nav .nav-pills a.active,
+.show > .nav-pills .nav-link,
+.show > .nav-pills .banner .nav a,
+.banner .nav .show > .nav-pills a {
+  color: #fff;
+  background-color: #be2e37;
+}
