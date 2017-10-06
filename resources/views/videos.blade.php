@@ -45,17 +45,40 @@ $args = [
 $query = new WP_Query( $args );
 @endphp
 
+{{--
+ids: for query
+159 = Salsa Cubaine
+214 = Rueda de Casino
+151 = Afro Cubain
+160 = Salsa Portoricaine
+156 = Lady Styling
+157 = Men Styling
+191 = Afro House
+153 = Dancehall
+Salsa HipHop
+219 = Urban Salsa
+Evenements
+161 = Shows
+218 = Teaser
+
+--}}
+
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
     {{-- The Loop --}}
     <div id="filters">
-      <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4" data-filter="*">show all</button>
+      <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center ph3 pv2 ba border-box" data-filter="*">show all</button>
       @php
-      $terms = get_terms();
+      $terms = get_terms([
+        'taxonomy' => 'category',
+        'hide_empty' => true,
+        'include' => [159, 214, 151, 160, 156, 157, 191, 153, 219, 161, 218]
+      ]);
       @endphp
+
       @foreach ($terms as $t)
-        <button class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box" data-filter=".{{$t->slug}}">{{$t->name}}</button>
+        <button class="f5 black hover-bg-black border-box bg-animate ba inline-flex items-center ph3 pv2 mt1 mr2 hover-white" data-filter=".{{$t->slug}}">{{$t->name}}</button>
       @endforeach
     </div>
     <br>
