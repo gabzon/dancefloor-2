@@ -40,6 +40,7 @@ a.btn-social, .btn-social { padding-top: 12px; }
 $args = [
   'post_type' => ['df_video'],
   'posts_per_page' => -1,
+  'orderby' => 'rand',
 ];
 
 // The Query
