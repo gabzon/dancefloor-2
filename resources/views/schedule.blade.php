@@ -76,7 +76,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $mon = Course::get_courses_by_day('mon') )
           @if ( count($mon) > 0 )
               <div class="col">
-                  <h4>Lundi <span class="text-muted"><i>(Monday)</i></span></h4>
+                  <h4 class="f4">Lundi <span class="text-muted"><i>(Monday)</i></span></h4>
                   @foreach ($mon as $key)
                       {{ display_course($key) }}
                   @endforeach
@@ -86,7 +86,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $tue = Course::get_courses_by_day('tue') )
           <?php if (count($tue) > 0 ): ?>
               <div class="col">
-                  <h4>Mardi <i class="text-muted" lang="en">(Tuesday)</i></h4>
+                  <h4 class="f4">Mardi <i class="text-muted" lang="en">(Tuesday)</i></h4>
                   <?php foreach ($tue as $key): ?>
                       <?php display_course($key); ?>
                   <?php endforeach; ?>
@@ -96,7 +96,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $wed = Course::get_courses_by_day('wed') )
           @if ( count($wed) > 0 )
               <div class="col">
-                  <h4>Mercredi <i class="text-muted" lang="en">(Wednesday)</i></h4>
+                  <h4 class="f4">Mercredi <i class="text-muted" lang="en">(Wednesday)</i></h4>
                   @foreach ($wed as $key)
                       @php( display_course($key) )
                   @endforeach
@@ -106,7 +106,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $thu = Course::get_courses_by_day('thu') )
           @if ( count($thu) > 0 )
               <div class="col">
-                  <h4>@php( _e('Thursday','sage') )</h4>
+                  <h4 class="f4">@php( _e('Thursday','sage') )</h4>
                   @foreach ($thu as $key)
                       @php( display_course($key) )
                   @endforeach
@@ -116,7 +116,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $fri = Course::get_courses_by_day('fri') )
           @if( count($fri) > 0 )
               <div class="col">
-                  <h4>@php( _e('Friday','sage') )</h4>
+                  <h4 class="f4">@php( _e('Friday','sage') )</h4>
                   @foreach ($fri as $key)
                       @php( display_course($key) )
                   @endforeach
@@ -126,7 +126,7 @@ $schedule = $dancefloor_options['schedule'];
           @php($sat = Course::get_courses_by_day('sat'))
           @if( count($sat) > 0 )
               <div class="col">
-                  <h3>@php( _e('Saturday','sage') )</h3>
+                  <h4 class="f4">@php( _e('Saturday','sage') )</h4>
                   @foreach ($sat as $key)
                       @php( display_course($key) )
                   @endforeach
@@ -136,7 +136,7 @@ $schedule = $dancefloor_options['schedule'];
           @php( $sun = Course::get_courses_by_day('sun') )
           @if( count($sun) > 0 )
               <div class="col">
-                  <h3>@php( _e('Sunday','sage') )</h3>
+                  <h4 class="f4">@php( _e('Sunday','sage') )</h4>
                   @foreach ($sun as $key)
                       @php( display_course($key) )
                   @endforeach
