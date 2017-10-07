@@ -35,7 +35,7 @@ $query = new WP_Query( $args );
             {{-- @php( $img_type = get_image_type($image) ) --}}
             <a href="{{ the_permalink() }}">
               <img src="{{ $image[0] }}" class="img-fluid grow"/>
-              <div class="title" style="text-transform:uppercase;" >
+              <div class="title" style="text-transform:uppercase; margin-left:-15px;" >
                 <span class="pv1 ph2 bg-black">@php(the_title())</span>
               </div>
             </a>
