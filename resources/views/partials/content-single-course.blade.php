@@ -42,7 +42,7 @@
           </tr>
           @if (get_post_meta($post->ID,'course_required_level',true))
             <tr>
-              <td><strong>Niveau requis <i class="text-muted" lang="en">(Required level)</i> :</strong>: </td>
+              <td><strong>Niveau requis <i class="text-muted" lang="en">(Required level)</i> :</strong></td>
               <td>{{ get_post_meta($post->ID,'course_required_level',true) }}</td>
             </tr>
           @endif
