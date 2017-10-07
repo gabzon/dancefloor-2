@@ -125,9 +125,9 @@
       </div>
     @endforeach
   </div>
-
+  <br>
+  <hr>
   @php( $theme_options = get_option('dancefloor_settings') )
-
   <section id="inscription">
     <div class="ui form">
       @php( $page = get_page_by_title( 'Formulaire' ) )
@@ -138,7 +138,7 @@
     </div>
     <br>
     @if ($bank_details)
-      <a href="{{ esc_url($bank_details) }}" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box tc"><i class="credit card alternative icon"></i> {{ _e('Bank details','sage') }}</a>
+      <a href="{{ esc_url($bank_details) }}" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pv2 ph3 ba border-box tc"><i class="credit card alternative icon"></i> {{ _e('Bank details','sage') }}</a>
     @endif
 
   </section>

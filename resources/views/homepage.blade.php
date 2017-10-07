@@ -30,13 +30,13 @@ $query = new WP_Query( $args );
     <div class="row" id="landing-grid">
       @if ($query->have_posts())
         @while ($query->have_posts()) @php(($query->the_post()))
-          <div class="col-md-4 mb3">
+          <div class="col-md-4 mb3 tc">
             @php( $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ) )
             {{-- @php( $img_type = get_image_type($image) ) --}}
-            <a href="{{ the_permalink() }}" >
-              <img src="{{ $image[0] }}" class="img-fluid" />
+            <a href="{{ the_permalink() }}">
+              <img src="{{ $image[0] }}" class="img-fluid grow"/>
               <div class="title" style="text-transform:uppercase;" >
-                <span style="background:black; padding:3px 5px">@php(the_title())</span>
+                <span class="pv1 ph2 bg-black">@php(the_title())</span>
               </div>
             </a>
         </div>
