@@ -42,7 +42,7 @@
           </tr>
           @if (get_post_meta($post->ID,'course_required_level',true))
             <tr>
-              <td><strong>{{ _e('Level required','sage') }}</strong>: </td>
+              <td><strong>Niveau requis <i class="text-muted" lang="en">(Required level)</i> :</strong>: </td>
               <td>{{ get_post_meta($post->ID,'course_required_level',true) }}</td>
             </tr>
           @endif
@@ -138,7 +138,6 @@
       @endphp
     </div>
     <br>
-
     @if ($bank_details)
       <a href="{{ esc_url($bank_details) }}" class="ui red huge button"><i class="credit card alternative icon"></i> {{ _e('Bank details','sage') }}</a>
     @endif
