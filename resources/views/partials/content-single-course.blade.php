@@ -57,6 +57,10 @@
             </td>
           </tr>
           <tr>
+            <td><strong>Prix <i class="text-muted">(Price)</i> :</strong></td>
+            <td>CHF {{ get_post_meta($post->ID,'course_full_price', true) }} / CHF {{ get_post_meta($post->ID,'course_reduced_price', true) }}</td>
+          </tr>
+          <tr>
             <td colspan="2" style="padding:0.75rem 0;">
               <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100 tc" href="#inscription">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>

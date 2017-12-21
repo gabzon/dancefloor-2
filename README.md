@@ -11,6 +11,40 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * [Yarn](https://yarnpkg.com/en/docs/install)
 * [Sage](https://github.com/roots/sage) >= 9.0
 * [Piklist](https://piklist.com/) >= 0.9.9
+* SEO framework
+* Favorite Posts
+
+## Version 3.0
+* Dancefloor app
+  * Posts + Notifications
+  * Schedule
+
+## Version 2.7
+
+## Version 2.6
+
+## Version 2.5
+
+## Version 2.4
+<!-- * Add Favorite posts -->
+<!-- * Adapt favorite posts to be Inscription -->
+
+## Version 2.3
+<!-- * Schedule template add link to course, teacher, Classroom, share buttons and Inscription
+* Create People profile pages
+* Add add_more for teachers in the teachers dropdown menu -->
+
+## Version 2.2
+<!-- * Video templates info toolbox added with location -->
+<!-- * Video templates share buttons -->
+<!-- * Fix sidebar problem -->
+<!-- check google calendar integration -->
+
+## Version 2.1
+* Stage/Workshops pages added
+* Videos pages improve with youtube Videos
+* cadre noir homepage
+* Menu width fixed
 
 ## Version 2
 
@@ -25,6 +59,8 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * Upgrade from Sage 8 to Sage 9
 * Price page updated (new design)
 * All buttons updated
+* Form typography increased
+* Update server from PHP 5.6 to PHP 7.1
 
 ## Version 1
 
