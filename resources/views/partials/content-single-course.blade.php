@@ -196,7 +196,7 @@
 
 <br>
 
-@php( $registered_students = get_users_who_favorited_post($post->ID) )
+{{-- @php( $registered_students = get_users_who_favorited_post($post->ID) )
 
 @if ($registered_students)
   @foreach ($registered_students as $key => $value)
@@ -210,4 +210,4 @@
 
       </pre>
   @endforeach
-@endif
+@endif --}}
