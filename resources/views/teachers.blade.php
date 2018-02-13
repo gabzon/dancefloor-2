@@ -18,7 +18,7 @@ Template Name: Teachers
 
     <div class="row">
       @foreach ($profs as $user)
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
           <!-- Card -->
           @php( $photos = get_user_meta($user->ID,'photo') )
           @php( $photo = ($photos ? $photos[0] : '') )
@@ -34,7 +34,7 @@ Template Name: Teachers
     <h3>{{ _e('Teachers','sage') }}</h3>
     <div class="row">
         <?php foreach ( $assistants as $user ) :?>
-          <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <!-- Card -->
             <?php $photos = get_user_meta($user->ID,'photo');?>
             <?php $photo = ($photos ? $photos[0] : ''); ?>

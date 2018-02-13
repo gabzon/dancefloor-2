@@ -12,33 +12,39 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * [Sage](https://github.com/roots/sage) >= 9.0
 * [Piklist](https://piklist.com/) >= 0.9.9
 * SEO framework
-* Favorite Posts
+* [Favorite Posts](https://favoriteposts.com/) >= 2.1.6
 
 ## Version 3.0
-* Dancefloor app
-  * Posts + Notifications
-  * Schedule
-
-## Version 2.7
-
-## Version 2.6
+<!-- * Dancefloor app
+* Posts + Notifications
+* Schedule -->
 
 ## Version 2.5
-
-## Version 2.4
-<!-- * Add Favorite posts -->
-<!-- * Adapt favorite posts to be Inscription -->
-
-## Version 2.3
-<!-- * Schedule template add link to course, teacher, Classroom, share buttons and Inscription
-* Create People profile pages
-* Add add_more for teachers in the teachers dropdown menu -->
-
-## Version 2.2
+<!-- * change location to category -->
+<!-- * change day to taxonomy -->
+<!-- * Change loop from cpt to taxonomy -->
+<!-- * move teachers.php to class in controller -->
 <!-- * Video templates info toolbox added with location -->
 <!-- * Video templates share buttons -->
 <!-- * Fix sidebar problem -->
 <!-- check google calendar integration -->
+<!-- * Schedule template add link to course, teacher, Classroom, share buttons and Inscription
+* Create People profile pages
+* Add add_more for teachers in the teachers dropdown menu -->
+<!-- * Default pricing -->
+<!-- Add setttings option page for social media (Facebook, Instagram, Twitter, Youtube, Vimeo, Google+) -->
+<!-- Add instagram to website  -->
+<!-- * choose color for footer and header  -->
+
+## Version 2.4
+
+
+## Version 2.3
+
+
+## Version 2.2
+* Add Favorite posts
+<!-- * Adapt favorite posts to be Inscription -->
 
 ## Version 2.1
 * Stage/Workshops pages added
@@ -83,8 +89,8 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * [Laravel Blade](https://laravel.com/docs/5.3/blade) as a templating engine
 * [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
 * CSS framework options:
-  * [Bootstrap 4](http://getbootstrap.com/)
-  * [Tachyons](http://tachyons.io/)
+* [Bootstrap 4](http://getbootstrap.com/)
+* [Tachyons](http://tachyons.io/)
 * Font Awesome
 
 ## Documentation

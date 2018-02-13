@@ -58,7 +58,23 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin', 'walker', 'teachers', 'post-type/course', 'post-type/classroom', 'post-type/video']);
+}, [
+  'helpers',
+  'setup',
+  'filters',
+  'admin',
+  'walker',
+  'teachers',
+  'taxonomy/day',
+  'taxonomy/level',
+  'taxonomy/style',
+  'taxonomy/classroom',
+  'post-type/course',
+  'post-type/classroom',
+  'post-type/video',
+  'day-filter',
+  'style-filter',
+]);
 /**
  * Here's what's happening with these hooks:
  * 1. WordPress initially detects theme in themes/sage/resources
