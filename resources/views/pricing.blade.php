@@ -31,4 +31,5 @@ Template Name: Pricing
 
 		<br>
 	@endwhile
+
 @endsection

@@ -2,6 +2,7 @@
 @php( $dancefloor_options = get_option('dancefloor_settings') )
 @php( $bank_details = $dancefloor_options['bank_details'] )
 
+
 <style media="screen">
   a.simplefavorite-button{
     font-size: 1rem;
@@ -93,13 +94,14 @@
             </td>
           </tr>
           <tr>
+            @php($price = App::prices($post->ID))
             <td><strong>Prix <i class="text-muted">(Price)</i> :</strong></td>
-            <td>CHF {{ get_post_meta($post->ID,'course_full_price', true) }} / CHF {{ get_post_meta($post->ID,'course_reduced_price', true) }}</td>
+            <td>{{ $price['currency'] . ' ' . $price['regular_price'] }} / {{ $price['currency'] . ' ' . $price['reduced_price'] }}</td>
           </tr>
           <tr>
             <td colspan="2" style="padding:0.75rem 0;">
-              <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100 tc" href="#inscription">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
+              <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href="#inscription">
+                <i class="far fa-edit"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
               </a>
               {{-- <div class="mv2"></div>
               @php
@@ -130,47 +132,11 @@
 
     {{--  Classroom section --}}
     <hr>
-
-    <h3>Salle de cours <i class="text-muted" lang="en">(Classroom)</i></h3>
-    @php
-    $classroom = get_posts([
-      'post_type'         => 'classroom',
-      'posts_per_page'    => -1,
-      'post_belongs'      => $post->ID,
-      'post_status'       => 'publish',
-      'suppress_filters'  => false // This must be set to false
-    ]);
-    @endphp
-
-    @foreach ($classroom as $salle)
-      <div class="row course-place">
-        <div class="col-md-4">
-          <table class="table table-responsive table-classroom" style="border-top:0; border-color:red;">
-            <tr>
-              <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
-              <td width="95%">
-                <strong>{{ $salle->post_title }}</strong> ({{ get_post_meta($salle->ID,'classroom_quartier',true) }})<br>
-                <?= get_post_meta($salle->ID,'classroom_address',true); ?><br>
-                <?= get_post_meta($salle->ID,'classroom_postal_code',true) . ', ' . get_post_meta($salle->ID,'classroom_ville',true);; ?><br>
-                <a href="<?= get_post_meta($salle->ID,'classroom_google_map_link',true); ?>" target="_blank">
-                  <?php _e('Open on Google maps','sage'); ?>
-                </a>
-              </td>
-            </tr>
-          </table>
-          <div class="ui big red label">
-            <i class="circle warning icon"></i> {{ _e('Attention: street shoes not allowed','sage') }}
-          </div>
-        </div>
-        <div class="col-md-8 map">
-          @php
-          echo get_post_meta($salle->ID,'classroom_google_map',true)
-          @endphp
-        </div>
-      </div>
-    @endforeach
+    @php( $classroom = Course::get_classroom($post->ID) )
+    @include('course/section-classroom')
+    <br>
   </div>
-  <br>
+
   <hr>
   @php( $theme_options = get_option('dancefloor_settings') )
   <section id="inscription">

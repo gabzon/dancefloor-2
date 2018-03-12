@@ -13,7 +13,7 @@ piklist('field',array(
 
 $npa = array(
     'type'      => 'text',
-    'label'     => __('Postal Code','sage'),
+    'label'     => __('ZIP Code','sage'),
     'field'     => 'classroom_postal_code',
     'columns'   => 2
 );
@@ -40,6 +40,14 @@ piklist('field',array(
         $city,
         $neiborhood
     )
+));
+
+piklist('field',array(
+    'type'      => 'text',
+    'label'     => __('Entry code','sage'),
+    'field'     => 'classroom_entry_code',
+    'help'      => 'Some buildings require an entry code in the front door',
+    'columns'   => 3
 ));
 
 piklist('field',array(

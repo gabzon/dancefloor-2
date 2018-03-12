@@ -20,31 +20,43 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * Schedule -->
 
 ## Version 2.5
-<!-- * change location to category -->
-<!-- * change day to taxonomy -->
+
 <!-- * Change loop from cpt to taxonomy -->
 <!-- * move teachers.php to class in controller -->
 <!-- * Video templates info toolbox added with location -->
 <!-- * Video templates share buttons -->
-<!-- * Fix sidebar problem -->
 <!-- check google calendar integration -->
 <!-- * Schedule template add link to course, teacher, Classroom, share buttons and Inscription
 * Create People profile pages
 * Add add_more for teachers in the teachers dropdown menu -->
-<!-- * Default pricing -->
-<!-- Add setttings option page for social media (Facebook, Instagram, Twitter, Youtube, Vimeo, Google+) -->
-<!-- Add instagram to website  -->
 <!-- * choose color for footer and header  -->
+<!-- should we add email and phone number of the teacher in class description when user is logged in? -->
 
 ## Version 2.4
 
 
 ## Version 2.3
-
+<!-- * Add Favorite posts -->
+<!-- * Adapt favorite posts to be Inscription -->
 
 ## Version 2.2
-* Add Favorite posts
-<!-- * Adapt favorite posts to be Inscription -->
+* Apperance > Settings added with 4 tabs [General | Social Media | Design(coming soon) | Pricing ]
+* Dynamic pricing
+* Fix sidebar problem
+* Migration from fontawesome 4 > fontawesome 5
+* Change and integrate classroom cpt to taxonomy
+* transform and integrate day to taxonomy, now slug = day_of_week
+* Course dashboard filters by taxonomies (day, level, style, classroom)
+* Phone number added to menu
+* Fullwidth layout created
+* Fullwidth added to homepage layout
+* lang folder created in "resources/lang"
+* instagram link added to footer
+* integration of setting page to theme
+* dynamics social links integrated to the setting page
+* Dynamic pricing (if price and currency not set, use default price + currency)
+* Debugged: Schedule title and Thursday title
+* Schedule is ordered by hour of classes automatically
 
 ## Version 2.1
 * Stage/Workshops pages added
@@ -92,6 +104,12 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * [Bootstrap 4](http://getbootstrap.com/)
 * [Tachyons](http://tachyons.io/)
 * Font Awesome
+
+CRUD Management of courses (CPT)
+CRUD Management of classrooms (taxonomy)
+CRUD Management of classrooms (Level)
+CRUD Management of classrooms (Styles)
+CRUD Management of classrooms (Day)
 
 ## Documentation
 

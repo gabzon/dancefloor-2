@@ -48,7 +48,8 @@ $workshops = new WP_Query( $args );
                 </ul>
               </div>
               <div class="card-footer tc f3">
-                <strong>CHF {{ get_post_meta(get_the_ID(),'course_full_price', true) }}</strong>
+                @php( $price = App::prices(get_the_ID()) )
+                <strong>{{ $price['currency'] . ' ' . $price['regular_price'] }}</strong>
               </div>
             </div>
           </div>

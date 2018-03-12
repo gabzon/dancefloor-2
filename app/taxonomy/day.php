@@ -37,7 +37,7 @@ if ( ! function_exists( 'Day_taxonomy' ) ) {
       'show_tagcloud'              => true,
       'show_in_rest'               => true,
     );
-    register_taxonomy( 'day', array( 'course' ), $args );
+    register_taxonomy( 'day_of_week', array( 'course' ), $args );
 
   }
   add_action( 'init', 'Day_taxonomy', 0 );

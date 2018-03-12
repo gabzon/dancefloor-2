@@ -126,3 +126,66 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+// Custom functions
+// Load sage text domain for translations in "resources/lang"
+// https://discourse.roots.io/t/install-sage9-language-files/10638/8
+add_action( 'after_setup_theme', function () {
+  load_theme_textdomain( 'sage', get_template_directory() . '/lang' );
+} );
+
+function get_image_type($image){
+    $w = $image[1];
+    $h = $image[2];
+    if ( $w > $h) {
+        if ($w > ($h*2)) {
+            return 'landscape-2';
+        }else {
+            return 'landscape';
+        }
+    } else if ( $w < $h ) {
+        return 'portrait';
+    } else {
+        return 'squared';
+    }
+}
+
+add_role( 'teacher',    __( 'Teacher','sage' ),     array( 'read' => true, 'edit_posts' => true, 'delete_posts' => true) );
+add_role( 'assistant',  __( 'Assistant','sage' ),   array( 'read' => true, 'edit_posts' => true, 'delete_posts' => true) );
+
+//disable WordPress sanitization to allow more than just $allowedtags from /wp-includes/kses.php
+// remove_filter('pre_user_description', 'wp_filter_kses');
+// //add sanitization for WordPress posts
+// add_filter( 'pre_user_description', 'wp_filter_post_kses');
+
+
+/*
+Custom WPML Switcher for bootstrap
+https://wpml.org/forums/topic/bootstrap-and-lang-switcher/
+*/
+// function new_nav_menu_items($items,$args) {
+//
+//     if (function_exists('icl_get_languages')) {
+//
+//         $languages = icl_get_languages('skip_missing=0' && $args->theme_location == 'top_menu' );
+//
+//         if(1 < count($languages)){
+//
+//             // $ll_flag = $languages[ICL_LANGUAGE_CODE]['country_flag_url'];
+//             // $ll_url = $languages[ICL_LANGUAGE_CODE]['url'];
+//             // $ll_code = $languages[ICL_LANGUAGE_CODE]['language_code'];
+//             // $ll_nname = $languages[ICL_LANGUAGE_CODE]['native_name'];
+//
+//             //$items = $items.'<li class="dropdown lang"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="'.$ll_url.'"><img src="'.$ll_flag.'" height="12" alt="'.$ll_code.'" width="18" /> '. $ll_nname .'</a><ul class=dropdown-menu>';
+//
+//             foreach($languages as $l){
+//                 if( ! $l['active'] ) {
+//                     $items = $items.'<li class="menu-item"><a href="'.$l['url'].'"><img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /> '. $l['native_name'] .'</a></li>';
+//                 }
+//             }
+//         }
+//     }
+//     return $items;
+// }
+// add_filter( 'wp_nav_menu_items', 'new_nav_menu_items',10,2 );

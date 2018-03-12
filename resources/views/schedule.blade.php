@@ -21,6 +21,7 @@ $schedule = $dancefloor_options['schedule'];
   @endwhile
   <br>
   @include('partials.content-page')
+
 @endsection
 
 <div class="formulaire-proposition">

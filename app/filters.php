@@ -75,9 +75,15 @@ add_filter('sage/display_sidebar', function ($display) {
 
     isset($display) || $display = in_array(true, [
       // The sidebar will be displayed if any of the following return true
-      is_single(),
+      //is_single(),
       is_404(),
-      is_page_template('template-custom.php')
+      is_page_template('template-custom.php'),
+      is_page_template('schedule.php'),
+      is_page_template('teachers.php'),
+      is_page_template('index.php'),
+      is_home(),
+      //is_singular('post'),
+      //is_singular('classroom'),
     ]);
 
     return $display;

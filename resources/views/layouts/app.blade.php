@@ -6,14 +6,26 @@
   @include('partials.header')
   <div class="wrap container" role="document">
     <div class="content">
-      <main class="main">
-        @yield('content')
-      </main>
       @if (App\display_sidebar())
-        <aside class="sidebar">
-          @include('partials.sidebar')
-        </aside>
+        <div class="row">
+          <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+            <aside class="sidebar">
+              @include('partials.sidebar')
+            </aside>
+          </div>
+          <div class="col-12 col-sm-8 col-md-9 col-lg-9">
+            <main class="main">
+              @yield('content')
+            </main>
+          </div>
+        </div>
+      @else
+        <main class="main">
+          @yield('content')
+        </main>
       @endif
+
+
     </div>
   </div>
   @php(do_action('get_footer'))

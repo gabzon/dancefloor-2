@@ -105,21 +105,21 @@ piklist('field',array(
   )
 ));
 
-$day = array(
-  'type'      => 'select',
-  'label'     => __('Day','sage'),
-  'field'     => 'course_day',
-  'columns'   => 5,
-  'choices'   => array(
-    'Monday'    => 'Monday',
-    'Tuesday'   => 'Tuesday',
-    'Wednesday' => 'Wednesday',
-    'Thursday'  => 'Thursday',
-    'Friday'    => 'Friday',
-    'Saturday'  => 'Saturday',
-    'Sunday'    => 'Sunday',
-  )
-);
+// $day = array(
+//   'type'      => 'select',
+//   'label'     => __('Day','sage'),
+//   'field'     => 'course_day',
+//   'columns'   => 5,
+//   'choices'   => array(
+//     'Monday'    => 'Monday',
+//     'Tuesday'   => 'Tuesday',
+//     'Wednesday' => 'Wednesday',
+//     'Thursday'  => 'Thursday',
+//     'Friday'    => 'Friday',
+//     'Saturday'  => 'Saturday',
+//     'Sunday'    => 'Sunday',
+//   )
+// );
 
 $start_time = array(
   'type'      => 'time',
@@ -137,10 +137,10 @@ $end_time = array(
 
 piklist('field',array(
   'type'      => 'group',
-  'label'     => __('Day and time','sage'),
+  'label'     => __('Start time - Finish time','sage'),
   'help'      => 'Time Format (HH:MM)',
   'fields'    => array(
-    $day,
+    //$day,
     $start_time,
     $end_time,
   )
@@ -148,7 +148,7 @@ piklist('field',array(
 
 piklist('field',array(
   'type'      => 'text',
-  'label'     => __('Teacher','sage'),
+  'label'     => __('Teacher(s)','sage'),
   'field'     => 'course_teacher',
   'columns'   => 12,
   'attributes' => array(
@@ -173,47 +173,47 @@ piklist('field',array(
   'columns'   => 12
 ));
 
-piklist('field', array(
-  'type'      => 'post-relate',
-  'label'     => __('Classroom location','sage'),
-  'scope'     => 'classroom',
-  'template'  => 'field',
-));
+// piklist('field', array(
+//   'type'      => 'post-relate',
+//   'label'     => __('Classroom location','sage'),
+//   'scope'     => 'classroom',
+//   'template'  => 'field',
+// ));
 
-piklist('field',array(
-  'type'      => 'text',
-  'label'     => __('Video','sage'),
-  'field'     => 'course_videos',
-  'columns'   => 12,
-  'add_more'  => true,
-));
+// piklist('field',array(
+//   'type'      => 'text',
+//   'label'     => __('Video','sage'),
+//   'field'     => 'course_videos',
+//   'columns'   => 12,
+//   'add_more'  => true,
+// ));
 
-//------
-$member = [
-  'type' => 'select',
-  'field' => 'members',
-  'label' => __('Choose a member','sage'),
-  'columns' => 8,
-  'choices' => ['' => 'Choose User'] + piklist(
-    get_users( ['orderby' => 'display_name','order' => 'asc'],'objects'), [ 'ID', 'display_name' ]),
-  ];
-
-  $paid = [
-    'type'      => 'checkbox',
-    'field'     => 'member_cours_payment',
-    'label' => __('Payment','sage'),
-    'value'     => 'not_paid',
-    'choices'   => ['paid'  => __('Paid','sage')],
-    'columns'   => 3
-  ];
-
-  piklist('field', array(
-    'type' => 'group',
-    'field' => 'enroll_group',
-    'label' => __('Enrolled members', 'piklist-demo'),
-    'fields' => [$member, $paid],
-    'add_more'  => true,
-  ));
+// //------
+// $member = [
+//   'type' => 'select',
+//   'field' => 'members',
+//   'label' => __('Choose a member','sage'),
+//   'columns' => 8,
+//   'choices' => ['' => 'Choose User'] + piklist(
+//     get_users( ['orderby' => 'display_name','order' => 'asc'],'objects'), [ 'ID', 'display_name' ]),
+//   ];
+//
+//   $paid = [
+//     'type'      => 'checkbox',
+//     'field'     => 'member_cours_payment',
+//     'label' => __('Payment','sage'),
+//     'value'     => 'not_paid',
+//     'choices'   => ['paid'  => __('Paid','sage')],
+//     'columns'   => 3
+//   ];
+//
+//   piklist('field', array(
+//     'type' => 'group',
+//     'field' => 'enroll_group',
+//     'label' => __('Enrolled members', 'piklist-demo'),
+//     'fields' => [$member, $paid],
+//     'add_more'  => true,
+//   ));
 
   $full_price = [
     'type'  => 'number',

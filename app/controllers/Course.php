@@ -132,4 +132,55 @@ class Course extends Controller
     return $room;
   }
 
+  public static function get_classroom( $key )
+  {
+    $classroom = wp_get_post_terms( $key, 'classroom');
+    return $classroom;
+  }
+
+  public static function days_of_week()
+  {
+    $days = [
+      'monday',
+      'tuesday',
+      'wednesday',
+      'thursday',
+      'friday',
+      'saturday',
+      'sunday'
+    ];
+    return $days;
+  }
+
+  public static function class( $day ) {
+    $args = array(
+      'post_type'       => [ 'course' ],
+      'posts_per_page'  => -1,
+      'post_status'     => 'publish',
+      'tax_query'       => array(
+        array(
+          'taxonomy'  => 'day_of_week',
+          'field'     => 'slug',
+          'terms'     => $day,
+        )
+      ),
+      'meta_query'      => array(
+        'relation'      => 'AND',
+        array(
+          'key'         => 'course_type',
+          'value'       => 'class'
+        ),
+        'hour_clause' => array(
+          'key'    => 'course_start_time',
+        )
+      ),
+      'orderby' => array(
+        'hour_clause' => 'ASC'
+      )
+    );
+
+    $class = new WP_Query( $args );
+    return $class;
+  }
+
 }
