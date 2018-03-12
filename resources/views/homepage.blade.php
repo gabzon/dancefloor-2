@@ -7,7 +7,7 @@ Template Name: Home page
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <div class="home-content" style="margin-top:-40px; padding-top:30px;">
+    <div class="home-content" style="margin-top:-40px;">
       @include('partials.content-page')
     </div>
 
