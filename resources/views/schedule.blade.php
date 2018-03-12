@@ -20,7 +20,7 @@ $schedule = $dancefloor_options['schedule'];
     @include('schedule.classes-per-day')
   @endwhile
   <br>
-  @include('partials.content-page')
+  {{-- @include('partials.content-page') --}}
 
 @endsection
 
