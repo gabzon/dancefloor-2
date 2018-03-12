@@ -14,12 +14,12 @@ $schedule = $dancefloor_options['schedule'];
 @endphp
 
 @section('content')
+  @include('schedule.info-header')
+  <br>
+  @include('schedule.classes-per-day')
   @while(have_posts()) @php(the_post())
-    @include('schedule.info-header')
     <br>
-    @include('schedule.classes-per-day')
-    <br>
-    {{-- @include('partials.content-page') --}}
+    @include('partials.content-page')
   @endwhile
 
 @endsection
