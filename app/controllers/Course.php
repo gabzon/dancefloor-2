@@ -138,6 +138,12 @@ class Course extends Controller
     return $classroom;
   }
 
+  public static function get_levels( $key )
+  {
+    $levels = wp_get_post_terms( $key, 'levels');
+    return $levels;
+  }
+
   public static function days_of_week()
   {
     $days = [
