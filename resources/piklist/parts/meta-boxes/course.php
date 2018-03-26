@@ -266,9 +266,7 @@ piklist('field',array(
   'field'     => 'course_form',
   'columns'   => 2,
   'value'     => '23',
-  'attributes' => array(
-    'placeholder' => __('Gravity form ID (ex: 23)','sage')
-  )
+  'help'      =>__('Gravity form ID (ex: 23)','sage'),
 ));
 
 ?>
