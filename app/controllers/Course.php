@@ -140,8 +140,44 @@ class Course extends Controller
 
   public static function get_levels( $key )
   {
-    $levels = wp_get_post_terms( $key, 'levels');
+    $levels = wp_get_post_terms( $key, 'level');
     return $levels;
+  }
+
+  public static function get_days( $key )
+  {
+    $days = wp_get_post_terms( $key, 'day_of_week');
+
+    $days_to_remove = [];
+
+    for ($i=0; $i < count($days); $i++) {
+      if ($days[$i]->slug == 'monday') {
+        array_push($days_to_remove, 0);
+      }
+      if ($days[$i]->slug == 'tuesday') {
+        array_push($days_to_remove, 1);
+      }
+      if ($days[$i]->slug == 'wednesday') {
+        array_push($days_to_remove, 2);
+      }
+      if ($days[$i]->slug == 'thursday') {
+        array_push($days_to_remove, 3);
+      }
+      if ($days[$i]->slug == 'friday') {
+        array_push($days_to_remove, 4);
+      }
+      if ($days[$i]->slug == 'saturday') {
+        array_push($days_to_remove, 5);
+      }
+      if ($days[$i]->slug == 'sunday') {
+        array_push($days_to_remove, 6);
+      }
+    }
+    asort($days_to_remove);
+
+    return $days_to_remove;
+    //return $days;
+
   }
 
   public static function days_of_week()

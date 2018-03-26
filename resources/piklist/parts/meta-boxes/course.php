@@ -262,11 +262,10 @@ piklist('field',[
 
 piklist('field',array(
   'type'      => 'number',
-  'label'     => __('Form Title','sage'),
+  'label'     => __('Gravity Form ID','sage'),
   'field'     => 'course_form',
   'columns'   => 2,
-  'value'     => '23',
-  'help'      =>__('Gravity form ID (ex: 23)','sage'),
+  'help'      => __('Ex: 23. If left empty it will display the default weekly class form ','sage'),
 ));
 
 ?>

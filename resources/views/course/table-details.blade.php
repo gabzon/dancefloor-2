@@ -2,15 +2,25 @@
   <tr>
     <td width="43%"><strong>Niveau <i lang="en" class="text-muted">(Level)</i> :</strong></td>
     <td width="57%">
-      {{ get_post_meta($post->ID,'course_level', true) }}
-      @if (get_post_meta($post->ID,'course_level_number', true))
-        ({{ get_post_meta($post->ID,'course_level_number', true) }})
-      @endif
+      @php($levels = Course::get_levels($post->ID))
+      @for ($i=0; $i < count($levels); $i++)
+        @if ($i == count($levels)-1)
+          {{ $levels[$i]->name }}
+        @else
+          {{ $levels[$i]->name . ', ' }}
+        @endif
+      @endfor
     </td>
   </tr>
   <tr>
     <td><strong>Jour <i class="text-muted" lang="en">(Day)</i> : </strong></td>
-    <td>{{ _e(get_post_meta($post->ID,'course_day', true),'sage') }}</td>
+    <td>
+      @php($days = Course::get_days($post->ID))
+      @php($dow = Course::days_of_week())
+      @foreach ($days as $d)
+        <span class="ttc">{{ __($dow[$d],'sage') }}</span><br>
+      @endforeach
+    </td>
   </tr>
   <tr>
     <td><strong>Heure <i class="text-muted" lang="en">(Time)</i> :</strong></td>
@@ -18,7 +28,11 @@
   </tr>
   <tr>
     <td><strong>Période <i class="text-muted" lang="en">(Period)</i> :</strong></td>
-    <td>{{ get_post_meta($post->ID,'course_start_date', true) . ' - ' . get_post_meta($post->ID,'course_end_date', true) }}</td>
+    @if ( get_post_meta($post->ID,'course_start_date', true) == get_post_meta($post->ID,'course_end_date', true) )
+      <td>{{ get_post_meta($post->ID,'course_start_date', true) }}</td>
+    @else
+      <td>{{ get_post_meta($post->ID,'course_start_date', true) . ' - ' . get_post_meta($post->ID,'course_end_date', true) }}</td>
+    @endif
   </tr>
   @if (get_post_meta($post->ID,'course_required_level',true))
     <tr>
