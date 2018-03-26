@@ -264,10 +264,10 @@ piklist('field',array(
   'type'      => 'number',
   'label'     => __('Form Title','sage'),
   'field'     => 'course_form',
-  'columns'   => 6,
-  'value'     => '0',
+  'columns'   => 2,
+  'value'     => '23',
   'attributes' => array(
-    'placeholder' => __('Default form','sage')
+    'placeholder' => __('Gravity form ID (ex: 23)','sage')
   )
 ));
 

@@ -2,7 +2,7 @@
 <section id="inscription">
   <div class="ui form">
     @php( $form_id = get_post_meta($post->ID,'course_form',true) )
-    @if ($form_id == '0')
+    @if ($form_id === '23')
       {{-- @php( $page = get_page_by_title( $form_title ) )
       @php( $content = apply_filters('the_content', $page->post_content) )
       @php
