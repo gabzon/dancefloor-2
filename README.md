@@ -33,11 +33,13 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 <!-- should we add email and phone number of the teacher in class description when user is logged in? -->
 
 ## Version 2.4
-
-
-## Version 2.3
 <!-- * Add Favorite posts -->
 <!-- * Adapt favorite posts to be Inscription -->
+
+## Version 2.3
+* Display correct Form according to the classes/Workshops (Default 'Formulaire')
+* Fix youtube problem homepage
+* fix pricing display problem for workshops with multi pricing
 
 ## Version 2.2
 * Apperance > Settings added with 4 tabs [General | Social Media | Design(coming soon) | Pricing ]

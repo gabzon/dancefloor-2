@@ -215,38 +215,59 @@ piklist('field',array(
 //     'add_more'  => true,
 //   ));
 
-  $full_price = [
-    'type'  => 'number',
-    'label' => __('Full Price','sage'),
-    'field' => 'course_full_price',
-    'columns' => 6,
-    'attributes' => ['placeholder' => __('ex: 160','sage')]
-  ];
+$full_price = [
+  'type'  => 'number',
+  'label' => __('Full Price','sage'),
+  'field' => 'course_full_price',
+  'columns' => 4,
+  'attributes' => ['placeholder' => __('ex: 160','sage')]
+];
 
-  $reduced_price = [
-    'type'  => 'number',
-    'label' => __('Reduced Price','sage'),
-    'field' => 'course_reduced_price',
-    'columns' => 6,
-    'attributes' => ['placeholder' => __('ex: 140','sage')]
-  ];
+$reduced_price = [
+  'type'  => 'number',
+  'label' => __('Reduced Price','sage'),
+  'field' => 'course_reduced_price',
+  'columns' => 4,
+  'attributes' => ['placeholder' => __('ex: 140','sage')]
+];
 
+$multi_price = [
+  'type'    => 'checkbox',
+  'label'   => __('Multi Pricing','sage'),
+  'field'   => 'course_multiprice',
+  'columns' => 4,
+  'value'   => '0',
+  'choices' => [
+    '1'     => 'Multi price'
+  ]
+];
 
-    piklist('field', array(
-      'type' => 'group',
-      'label' => __('Price', 'sage'),
-      'fields' => [$full_price, $reduced_price],
-    ));
+piklist('field', array(
+  'type' => 'group',
+  'label' => __('Price', 'sage'),
+  'fields' => [$full_price, $reduced_price, $multi_price],
+));
 
-  piklist('field',[
-    'type'      => 'select',
-    'label'     => __('Course Type','sage'),
-    'field'     => 'course_type',
-    'columns'   => 5,
-    'value'     => 'class',
-    'choices'   => array(
-      'class'     => __('class','sage'),
-      'workshop'  => __('workshop','sage'),
-    )
-  ]);
-  ?>
+piklist('field',[
+  'type'      => 'select',
+  'label'     => __('Course Type','sage'),
+  'field'     => 'course_type',
+  'columns'   => 5,
+  'value'     => 'class',
+  'choices'   => array(
+    'class'     => __('class','sage'),
+    'workshop'  => __('workshop','sage'),
+  )
+]);
+
+piklist('field',array(
+  'type'      => 'text',
+  'label'     => __('Form Title','sage'),
+  'field'     => 'course_form',
+  'columns'   => 6,
+  'value'     => 'Formulaire',
+  'attributes' => array(
+    'placeholder' => 'Formulaire'
+  )
+));
+?>

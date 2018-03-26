@@ -100,6 +100,7 @@ class App extends Controller
       'regular_price' => $regular_price,
       'reduced_price' => $reduced_price,
       'currency'      => $dancefloor_options['df_currency'],
+      'multi_price'   => get_post_meta($key,'course_multiprice', true),
     ];
 
     return $prices;

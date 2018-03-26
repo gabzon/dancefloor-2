@@ -4,39 +4,39 @@
 
 
 <style media="screen">
-  a.simplefavorite-button{
-    font-size: 1rem;
-    text-decoration: none;
-    color:#e7040f;
-    transition: background-color .15s ease-in-out;
-    margin-right: 2rem;
-    padding: 1rem;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 1px;
-    width: 100% !important;
-  }
-  a.simplefavorite-button.active{
-    background: #e7040f;
-    font-size: 1rem;
-    text-decoration: none;
-    color:white;
-    transition: background-color .15s ease-in-out;
-    margin-right: 2rem;
-    padding: 1rem;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 1px;
-    width: 100% !important;
-  }
-  a.simplefavorite-button:hover{
-    color: white !important;
-    background: #e7040f !important;
-    transition: background-color .15s ease-in-out;
-  }
-  a.simplefavorite-button:hover i{
-    color:white !important;
-  }
+a.simplefavorite-button{
+  font-size: 1rem;
+  text-decoration: none;
+  color:#e7040f;
+  transition: background-color .15s ease-in-out;
+  margin-right: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  width: 100% !important;
+}
+a.simplefavorite-button.active{
+  background: #e7040f;
+  font-size: 1rem;
+  text-decoration: none;
+  color:white;
+  transition: background-color .15s ease-in-out;
+  margin-right: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  width: 100% !important;
+}
+a.simplefavorite-button:hover{
+  color: white !important;
+  background: #e7040f !important;
+  transition: background-color .15s ease-in-out;
+}
+a.simplefavorite-button:hover i{
+  color:white !important;
+}
 </style>
 
 <article @php(post_class())>
@@ -93,10 +93,14 @@
               <?php endif; ?>
             </td>
           </tr>
+          @php($price = App::prices($post->ID))
           <tr>
-            @php($price = App::prices($post->ID))
             <td><strong>Prix <i class="text-muted">(Price)</i> :</strong></td>
-            <td>{{ $price['currency'] . ' ' . $price['regular_price'] }} / {{ $price['currency'] . ' ' . $price['reduced_price'] }}</td>
+            @if (!$price['multi_price'])
+              <td>{{ $price['currency'] . ' ' . $price['regular_price'] }} / {{ $price['currency'] . ' ' . $price['reduced_price'] }}</td>
+            @else
+              <td>{{ __('From','sage') . ' ' .  $price['currency'] . ' ' . $price['regular_price'] }}</td>
+            @endif
           </tr>
           <tr>
             <td colspan="2" style="padding:0.75rem 0;">
@@ -105,53 +109,40 @@
               </a>
               {{-- <div class="mv2"></div>
               @php
-                the_favorites_button($post->ID);
-              @endphp --}}
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="col-md-8">
-        <?php the_content() ?>
-        <br>
-        @if (!get_post_meta($post->ID,'course_holidays')[0] == '' )
-          <div class="ui big label">
-            <i class="fa fa-calendar"></i> {{ _e('Holidays (there won\'t be courses during this dates)') }}
-          </div>
-          <br>
-          <br>
-          <ul>
-            @foreach (get_post_meta($post->ID,'course_holidays') as $key)
-              <li>{{ $key }}</li>
-            @endforeach
-          </ul>
-        @endif
-      </div>
+              the_favorites_button($post->ID);
+            @endphp --}}
+          </td>
+        </tr>
+      </table>
     </div>
 
-    {{--  Classroom section --}}
-    <hr>
-    @php( $classroom = Course::get_classroom($post->ID) )
-    @include('course/section-classroom')
-    <br>
+    <div class="col-md-8">
+      <?php the_content() ?>
+      <br>
+      @if (!get_post_meta($post->ID,'course_holidays')[0] == '' )
+        <div class="ui big label">
+          <i class="fa fa-calendar"></i> {{ _e('Holidays (there won\'t be courses during this dates)') }}
+        </div>
+        <br>
+        <br>
+        <ul>
+          @foreach (get_post_meta($post->ID,'course_holidays') as $key)
+            <li>{{ $key }}</li>
+          @endforeach
+        </ul>
+      @endif
+    </div>
   </div>
 
+  {{--  Classroom section --}}
   <hr>
-  @php( $theme_options = get_option('dancefloor_settings') )
-  <section id="inscription">
-    <div class="ui form">
-      @php( $page = get_page_by_title( 'Formulaire' ) )
-      @php( $content = apply_filters('the_content', $page->post_content) )
-      @php
-      echo $content;
-      @endphp
-    </div>
-    <br>
-    @if ($bank_details)
-      <a href="{{ esc_url($bank_details) }}" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pv2 ph3 ba border-box tc"><i class="credit card alternative icon"></i> {{ _e('Bank details','sage') }}</a>
-    @endif
-  </section>
+  @php( $classroom = Course::get_classroom($post->ID) )
+  @include('course/section-classroom')
+  <br>
+</div>
+
+<hr>
+@include('course/form')
 
 <footer>
   @php( wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) )
@@ -164,15 +155,15 @@
 {{-- @php( $registered_students = get_users_who_favorited_post($post->ID) )
 
 @if ($registered_students)
-  @foreach ($registered_students as $key => $value)
+@foreach ($registered_students as $key => $value)
 
-      <pre>
-        @php
-        echo $value->display_name;
-        //print_r($value)
+<pre>
+@php
+echo $value->display_name;
+//print_r($value)
 
-        @endphp
+@endphp
 
-      </pre>
-  @endforeach
+</pre>
+@endforeach
 @endif --}}

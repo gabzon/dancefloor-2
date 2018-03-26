@@ -49,7 +49,11 @@ $workshops = new WP_Query( $args );
               </div>
               <div class="card-footer tc f3">
                 @php( $price = App::prices(get_the_ID()) )
-                <strong>{{ $price['currency'] . ' ' . $price['regular_price'] }}</strong>
+                @if ($price['multi_price'])
+                  <strong>{{ __('From','sage') . ' ' . $price['currency'] . ' ' . $price['regular_price'] }}</strong>
+                @else
+                  <strong>{{ $price['currency'] . ' ' . $price['regular_price'] }}</strong>
+                @endif
               </div>
             </div>
           </div>
