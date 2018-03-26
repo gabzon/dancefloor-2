@@ -261,13 +261,14 @@ piklist('field',[
 ]);
 
 piklist('field',array(
-  'type'      => 'text',
+  'type'      => 'number',
   'label'     => __('Form Title','sage'),
   'field'     => 'course_form',
   'columns'   => 6,
-  'value'     => 'Formulaire',
+  'value'     => '0',
   'attributes' => array(
-    'placeholder' => 'Formulaire'
+    'placeholder' => __('Default form','sage')
   )
 ));
+
 ?>
