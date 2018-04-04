@@ -56,7 +56,7 @@
     @if (!$price['multi_price'])
       <td>{{ $price['currency'] . ' ' . $price['regular_price'] }} / {{ $price['currency'] . ' ' . $price['reduced_price'] }}</td>
     @else
-      <td>{{ __('From','sage') . ' ' .  $price['currency'] . ' ' . $price['regular_price'] }}</td>
+      <td>{{ __('Dès','sage') . ' ' .  $price['currency'] . ' ' . $price['regular_price'] }}</td>
     @endif
   </tr>
   <tr>
