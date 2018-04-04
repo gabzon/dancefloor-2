@@ -36,6 +36,17 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 <!-- * Add Favorite posts -->
 <!-- * Adapt favorite posts to be Inscription -->
 
+
+## Meeting
+- Vedran
+- graph
+- inscription buttons
+- Framework (Cadre - Gif - Histoire)
+- Franchise
+- Pricing table +1 (easy algo)
+- Graphic multicolors
+
+
 ## Version 2.3
 * Display correct Form according to the classes/Workshops , needs gravity form id (Default '23')
 * Fix youtube problem homepage

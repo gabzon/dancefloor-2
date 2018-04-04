@@ -47,7 +47,7 @@
     <br>
 
     <hr>
-    @include('course/form')
+    {{-- @include('course/form') --}}
   </div>
 
   <footer>

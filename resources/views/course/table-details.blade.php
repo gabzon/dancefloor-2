@@ -61,9 +61,12 @@
   </tr>
   <tr>
     <td colspan="2" style="padding:0.75rem 0;">
-      <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href="#inscription">
+      <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href=".gform_wrapper">
         <i class="far fa-edit"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
       </a>
+      {{-- <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href="#inscription">
+        <i class="far fa-edit"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
+      </a> --}}
       {{-- <div class="mv2"></div>
       @php
       the_favorites_button($post->ID);
