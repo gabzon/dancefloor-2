@@ -34,7 +34,8 @@
 <br>
 <hr>
 <br>
-<h2 class="tc">Le tarif des cours varie selon le moment où vous arrivez dans la session.</h2>
+<h1 class="tc text-muted">Le tarif des cours varie selon le moment où vous arrivez dans la session.</h1>
+<br>
 <div class="price-explain">
   <div class="row justify-content-center">
     <div class="col-12 col-sm-12 col-md-5 col-lg-5">
@@ -42,56 +43,56 @@
       <table class="table tc">
         <thead>
           <tr>
-            <th scope="col">Cours</th>
+            {{-- <th scope="col">Cours</th> --}}
             {{-- <th scope="col">Prix unité</th> --}}
-            <th scope="col">Cours restant</th>
+            <th scope="col">Nombre de cours</th>
             <th scope="col">Total</th>
           </tr>
         </thead>
         <tr>
-          <td>1</td>
+          {{-- <td>1</td> --}}
           {{-- <td>CHF 20</td> --}}
           <td>8</td>
           <td>CHF 160</td>
         </tr>
         <tr>
-          <td>2</td>
+          {{-- <td>2</td> --}}
           {{-- <td>CHF 21</td> --}}
           <td>7</td>
           <td>CHF 145</td>
         </tr>
         <tr>
-          <td>3</td>
+          {{-- <td>3</td> --}}
           {{-- <td>CHF 22</td> --}}
           <td>6</td>
           <td>CHF 130</td>
         </tr>
         <tr>
-          <td>4</td>
+          {{-- <td>4</td> --}}
           {{-- <td>CHF 22.5</td> --}}
           <td>5</td>
           <td>CHF 115</td>
         </tr>
         <tr>
-          <td>5</td>
+          {{-- <td>5</td> --}}
           {{-- <td>CHF 22,5</td> --}}
           <td>4</td>
           <td>CHF 90</td>
         </tr>
         <tr>
-          <td>6</td>
+          {{-- <td>6</td> --}}
           {{-- <td>CHF 23</td> --}}
           <td>3</td>
           <td>CHF 70</td>
         </tr>
         <tr>
-          <td>7</td>
+          {{-- <td>7</td> --}}
           {{-- <td>CHF 23</td> --}}
           <td>2</td>
           <td>CHF 45</td>
         </tr>
         <tr>
-          <td>8</td>
+          {{-- <td>8</td> --}}
           {{-- <td>CHF 25</td> --}}
           <td>1</td>
           <td>CHF 25</td>
@@ -103,56 +104,56 @@
       <table class="table tc">
         <thead>
           <tr>
-            <th scope="col"># Cours</th>
+            {{-- <th scope="col"># Cours</th> --}}
             {{-- <th scope="col">Prix unité</th> --}}
-            <th scope="col">Cours restant</th>
+            <th scope="col">Nombre de cours</th>
             <th scope="col">Total</th>
           </tr>
         </thead>
         <tr>
-          <td>1</td>
+          {{-- <td>1</td> --}}
           {{-- <td>CHF 27,5</td> --}}
           <td>8</td>
           <td>CHF 220</td>
         </tr>
         <tr>
-          <td>2</td>
+          {{-- <td>2</td> --}}
           {{-- <td>CHF 28</td> --}}
           <td>7</td>
           <td>CHF 195</td>
         </tr>
         <tr>
-          <td>3</td>
+          {{-- <td>3</td> --}}
           {{-- <td>CHF 29</td> --}}
           <td>6</td>
           <td>CHF 175</td>
         </tr>
         <tr>
-          <td>4</td>
+          {{-- <td>4</td> --}}
           {{-- <td>CHF 31</td> --}}
           <td>5</td>
           <td>CHF 155</td>
         </tr>
         <tr>
-          <td>5</td>
+          {{-- <td>5</td> --}}
           {{-- <td>CHF 31,5</td> --}}
           <td>4</td>
           <td>CHF 125</td>
         </tr>
         <tr>
-          <td>6</td>
+          {{-- <td>6</td> --}}
           {{-- <td>CHF 32</td> --}}
           <td>3</td>
           <td>CHF 95</td>
         </tr>
         <tr>
-          <td>7</td>
+          {{-- <td>7</td> --}}
           {{-- <td>CHF 33</td> --}}
           <td>2</td>
           <td>CHF 65</td>
         </tr>
         <tr>
-          <td>8</td>
+          {{-- <td>8</td> --}}
           {{-- <td>CHF 35</td> --}}
           <td>1</td>
           <td>CHF 35</td>
