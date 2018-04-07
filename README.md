@@ -38,14 +38,14 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 
 
 ## Meeting
-- Vedran
-- graph
+
 - inscription buttons
 - Framework (Cadre - Gif - Histoire)
+- graph
 - Franchise
-- Pricing table +1 (easy algo)
 - Graphic multicolors
-
+- Vedran
+- Ajouter un text quand les stages sont vides (et partout ou il y a une boucle)
 
 ## Version 2.3
 * Display correct Form according to the classes/Workshops , needs gravity form id (Default '23')
