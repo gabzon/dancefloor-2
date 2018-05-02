@@ -26,9 +26,9 @@ Template Name: Home page
               @php( $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ) )
               <a href="{{ the_permalink() }}">
                 <img src="{{ $image[0] }}" class="img-fluid grow"/>
-                <div class="title" style="text-transform:uppercase; margin-left:-15px;" >
+                {{-- <div class="title" style="text-transform:uppercase; margin-left:-15px;" >
                   <span class="pv1 ph2 bg-black">@php(the_title())</span>
-                </div>
+                </div> --}}
               </a>
             </div>
           @endwhile
