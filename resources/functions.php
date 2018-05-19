@@ -69,8 +69,9 @@ array_map(function ($file) use ($sage_error) {
   'taxonomy/level',
   'taxonomy/style',
   'taxonomy/classroom',
-  'post-type/course',  
-  'post-type/video',
+  'post-type/course',
+  // 'post-type/video',
+  'post-type/figure',
   'admin-filters/course-filters',
 ]);
 /**

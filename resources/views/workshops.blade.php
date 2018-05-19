@@ -44,7 +44,12 @@ $workshops = new WP_Query( $args );
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"><strong>Date:</strong> {{ get_post_meta(get_the_ID(),'course_start_date', true) }}</li>
                   <li class="list-group-item"><strong>Heure:</strong> {{ get_post_meta(get_the_ID(),'course_start_time', true) }} - {{ get_post_meta(get_the_ID(),'course_end_time', true) }}</li>
-                  <li class="list-group-item"><strong>Lieu:</strong> Diafa | Salle B</li>
+                  <li class="list-group-item"><strong>Lieu:</strong>
+                    @php
+                      $classroom = get_the_terms(get_the_ID(),'classroom');
+                      echo $classroom[0]->name
+                    @endphp
+                  </li>
                 </ul>
               </div>
               <div class="card-footer tc f3">

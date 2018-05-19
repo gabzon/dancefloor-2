@@ -24,8 +24,6 @@
           @yield('content')
         </main>
       @endif
-
-
     </div>
   </div>
   @php(do_action('get_footer'))
