@@ -34,7 +34,7 @@ $workshops = new WP_Query( $args );
                 <img class="card-img-top card-img img-fluid " src="http://localhost/dancefloor/web/app/uploads/2016/03/1598771_1686453341589092_3132456213276382726_o.jpg" alt="Card image cap"/>
               @endif
               <div class="card-body">
-                {{-- <h4 class="card-title"><h3>@php(the_title())</h3></h4> --}}
+                <h4 class="card-title">{{-- @php(the_title()) --}}</h4>
                 <p class="card-text text-muted">
                   @php( $cats = wp_get_post_categories(get_the_ID()))
                   @foreach ($cats as $key => $value)
