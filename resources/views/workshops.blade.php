@@ -35,12 +35,12 @@ $workshops = new WP_Query( $args );
               @endif
               <div class="card-body">
                 <h4 class="card-title">{{-- @php(the_title()) --}}</h4>
-                <p class="card-text text-muted">
+                {{-- <p class="card-text text-muted">
                   @php( $cats = wp_get_post_categories(get_the_ID()))
                   @foreach ($cats as $key => $value)
                     <span class="badge badge-danger">{{ get_cat_name($value) }}</span>
                   @endforeach
-                </p>
+                </p> --}}
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"><strong>Date:</strong> {{ get_post_meta(get_the_ID(),'course_start_date', true) }}</li>
                   <li class="list-group-item"><strong>Heure:</strong> {{ get_post_meta(get_the_ID(),'course_start_time', true) }} - {{ get_post_meta(get_the_ID(),'course_end_time', true) }}</li>
