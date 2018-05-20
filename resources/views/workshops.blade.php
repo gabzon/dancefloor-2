@@ -24,7 +24,7 @@ $workshops = new WP_Query( $args );
           <div class="col-lg-4 col-md-4 col-sm-6">
             @php($workshops->the_post())
             @php($thumb_id = get_post_thumbnail_id())
-            <div class="card grow pointer">
+            <div class="card grow pointer mb2">
               @if ($thumb_id)
                 @php( $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true) )
                 <a type="button" href="@php(the_permalink())">
