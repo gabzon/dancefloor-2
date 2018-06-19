@@ -127,8 +127,12 @@
     "yargs": "~8.0"
   },
   "dependencies": {
+    "antd": "^3.6.2",
     "bootstrap": "^4.0.0-beta",
+    "eslint-plugin-react": "^7.9.1",
+    "jquery": "1.12.4 - 3",
     "popper.js": "^1.11.0",
-    "jquery": "1.12.4 - 3"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }

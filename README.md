@@ -47,6 +47,11 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 - Vedran
 - Ajouter un text quand les stages sont vides (et partout ou il y a une boucle)
 
+## Version 2.4
+* Featured image url added to WP Rest API in "app/api/feature_image"
+* Figures custom post type created
+* Program template for Figures post type created
+
 ## Version 2.3
 * Display correct Form according to the classes/Workshops , needs gravity form id (Default '23')
 * Fix youtube problem homepage

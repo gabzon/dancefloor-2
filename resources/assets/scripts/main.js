@@ -10,6 +10,7 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 import videos from './routes/videos';
+import program from './routes/program';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -21,6 +22,8 @@ const routes = new Router({
   aboutUs,
 
   videos,
+
+  program,
 });
 
 // Load Events
