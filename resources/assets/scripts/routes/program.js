@@ -17,7 +17,7 @@ export default {
       }
 
       componentDidMount() {
-        let dataURL = "http://dancefloorgenevasalsa.ch/wp-json/wp/v2/figure?_embed&per_page=100";
+        let dataURL = "http://dancefloorgenevasalsa.ch/wp-json/wp/v2/figure?_embed&per_page=100&orderby=rand";
         fetch(dataURL)
         .then(res => res.json())
         .then(res => {
@@ -41,7 +41,7 @@ export default {
           <List grid={{ gutter: 16, column: 4 }} dataSource={this.state.movies}
           renderItem={item => (
             <List.Item>
-            <Card hoverable style={{ width: 240 }} cover={<img alt="dancehall" src={item._embedded['wp:featuredmedia']['0'].source_url} />}>
+            <Card hoverable style={{ width: 240 }} cover={<img alt="dancehall" src={item.featured_img_url} />}>
                 <Meta title={item.title.rendered} description="www.instagram.com" />
               </Card>
             </List.Item>

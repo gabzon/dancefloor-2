@@ -7,7 +7,6 @@ Template Name: Program
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    <div id="figure"></div>
     <div class="row">
       <div class="col-2">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -26,6 +25,7 @@ Template Name: Program
         </div>
       </div>
     </div>
+    <div id="figure"></div>
     @include('partials.content-page')
   @endwhile
   <br>

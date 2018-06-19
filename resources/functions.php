@@ -66,6 +66,7 @@ array_map(function ($file) use ($sage_error) {
   'walker',
   'teachers',
   'api/featured-image',
+  'api/rand_query',
   'taxonomy/day',
   'taxonomy/level',
   'taxonomy/style',
