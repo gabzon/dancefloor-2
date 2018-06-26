@@ -13,8 +13,10 @@ Template Name: Home page
 
     <br>
     <div class="container">
-      <hr>
-      <h1 class="tc pv2">Actualités <i lang="en">(News)</i></h1>
+      @if (App::display_news_title() === 'yes')
+        <hr>
+        <h1 class="tc pv2">Actualités <i lang="en">(News)</i></h1>
+      @endif
       {{-- <div class="pv3"></div>
       <h1 class="landing-title"><span style="color:#BF2E36">DANCE</span>FLOOR</h1>
       <h2 style="margin:0; letter-spacing:0.1px;" class="tc white ttu bg-black f3">école & Compagnie de danse à Genève</h2>

@@ -118,4 +118,11 @@ class App extends Controller
     $dancefloor_options = get_option('dancefloor_settings');
   }
 
+  public static function display_news_title($display = 'yes')
+  {
+    $dancefloor_options = get_option('dancefloor_settings');
+    $display = $dancefloor_options['df_display_news_title'];
+    return $display;
+  }
+
 }
