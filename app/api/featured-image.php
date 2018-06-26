@@ -1,6 +1,6 @@
 <?php
 
-
+//https://medium.com/@dalenguyen/how-to-get-featured-image-from-wordpress-rest-api-5e023b9896c6
 add_action('rest_api_init', 'register_rest_images' );
 function register_rest_images(){
     register_rest_field( array('post','figure','course'),

@@ -17,7 +17,7 @@ export default {
       }
 
       componentDidMount() {
-        let dataURL = "http://dancefloorgenevasalsa.ch/wp-json/wp/v2/figure?_embed&per_page=100&orderby=rand";
+        let dataURL = "http://dancefloorgenevasalsa.ch/wp-json/wp/v2/figure?_embed&per_page=100";
         fetch(dataURL)
         .then(res => res.json())
         .then(res => {
