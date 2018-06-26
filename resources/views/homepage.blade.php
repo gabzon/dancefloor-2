@@ -11,9 +11,9 @@ Template Name: Home page
       @include('partials.content-page')
     </div>
 
-    <br>
     <div class="container">
       @if (App::display_news_title() === 'yes')
+        <br>
         <hr>
         <h1 class="tc pv2">Actualités <i lang="en">(News)</i></h1>
       @endif
