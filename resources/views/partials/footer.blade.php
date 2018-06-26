@@ -55,7 +55,7 @@
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 centering contact">
                 <h6 style="padding-top:10px"><a href="mailto:{{ App::email() }}" target="_blank" class="email white link hover-gray"><i class="fa fa-envelope" aria-hidden="true"></i> {{ App::email() }}</a></h6>
                 <h6><a href="tel:{{ App::phone() }}" class="phone white link hover-gray"><i class="fa fa-phone" aria-hidden="true"></i>  {{ App::phone() }}</a></h6>
-                <div class="fb-like" data-href="https://www.facebook.com/DancefloorGeneva/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+                <div class="fb-like" data-href="{{ $social['facebook'] }}" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
         </div>
         <br>
