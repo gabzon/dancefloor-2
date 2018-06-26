@@ -61,6 +61,10 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('customize-selective-refresh-widgets');
 
+    /**
+    * Enable logo option in the customizer
+    * @link https://developer.wordpress.org/themes/functionality/custom-logo/
+    */
     add_theme_support( 'custom-logo' );
 
     /**

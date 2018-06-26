@@ -5,7 +5,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 centering">
-                <a href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dancefloor-logo-white.svg" alt="Dancefloor logo" class="img-fluid" min-width="150" max-width="150" width="200"/></a>
+                <a href="<?= esc_url(home_url('/')); ?>">
+                  @if (App::site_logo())
+                    <img src="{{ App::site_logo() }}" alt="Dancefloor logo" class="img-fluid" width="200"/>
+                  @else
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dancefloor-logo-white.svg" alt="Dancefloor logo" class="img-fluid" width="150"/>
+                  @endif
+                </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 social-links text-center">
               <br>
