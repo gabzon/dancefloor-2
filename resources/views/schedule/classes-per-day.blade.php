@@ -4,7 +4,7 @@
     @php( $class = Course::class($d) )
     @if ( $class->have_posts() )
       <div class="col">
-        <h4 class="f4 pb1 ttc">{{ __($d, 'sage') }}</h4>
+        <h4 class="f4 pb1 ttc"><?= __($d, 'sage'); ?></h4>
           @while ( $class->have_posts() )
             @php( $class->the_post() )
             @php ( $key = get_the_ID() )

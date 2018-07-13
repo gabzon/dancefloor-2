@@ -70,7 +70,7 @@ piklist('field', array(
     'field' => 'classroom_require_shoes',
     'value' => 'FALSE',
     'label' => 'Shoes',
-    'description' => __('This classroom requires special shoes on the dancefloor','sage'),
+    'description' => __('This classroom requires special shoes for the dancefloor','sage'),
     'choices' => array(
         'TRUE' => 'Require shoes'
     )
@@ -79,5 +79,5 @@ piklist('field', array(
 piklist('field', array(
     'type' => 'file',
     'field' => 'classroom_photos',
-    'label' => __('Add Photo(s)','piklist'),
+    'label' => __('Add Photo(s)','sage'),
 ));

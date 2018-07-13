@@ -15,5 +15,24 @@ piklist('field', [
   'choices'   => [
     'yes' => 'yes',
     'non' => 'non',
-    ]
+  ]
+]);
+
+piklist('field',[
+  'type'  => 'editor',
+  'field' => 'df_schedule_message',
+  'label' => __('Display a message in the Schedule page','sage'),
+  'options' => array( // Pass any option that is accepted by wp_editor()
+    'wpautop' => true,
+    'media_buttons' => true,
+    'shortcode_buttons' => true,
+    'teeny' => false,
+    'dfw' => false,
+    'quicktags' => true,
+    'drag_drop_upload' => true,
+    'tinymce' => array(
+      'resize' => false,
+      'wp_autoresize_on' => true
+    )
+  )
 ]);

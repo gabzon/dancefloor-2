@@ -15,7 +15,7 @@ Template Name: Home page
       @if (App::display_news_title() === 'yes')
         <br>
         <hr>
-        <h1 class="tc pv2">Actualités <i lang="en">(News)</i></h1>
+        <h1 class="tc pv2"><?= __('News','sage') ?> <i lang="en">(News)</i></h1>
       @endif
       {{-- <div class="pv3"></div>
       <h1 class="landing-title"><span style="color:#BF2E36">DANCE</span>FLOOR</h1>
@@ -44,7 +44,7 @@ Template Name: Home page
   <br>
   <div class="container">
     <hr>
-    <h1 class="tc pv2">Horaire <i class="text-muted" lang="en">(Schedule)</i></h1>
+    <h1 class="tc pv2"><?= __('Schedule','sage'); ?> <i class="text-muted i f3" lang="en">(Schedule)</i></h1>
     @include('schedule.classes-per-day')
     <br>
   </div>

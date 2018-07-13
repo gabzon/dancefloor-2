@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-06-26 17:16+0100\n"
+"POT-Creation-Date: 2018-07-03 16:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: ../views\n"
 
 #: ../functions.php:17
 msgid "Sage &rsaquo; Error"
@@ -24,19 +25,19 @@ msgstr ""
 
 #: ../functions.php:27
 msgid "You must be using PHP 7 or greater."
-msgstr ""
+msgstr "Morate koristiti PHP 7 ili noviju verziju."
 
 #: ../functions.php:27
 msgid "Invalid PHP version"
-msgstr ""
+msgstr "Nevažeća PHP verzija"
 
 #: ../functions.php:34
 msgid "You must be using WordPress 4.7.0 or greater."
-msgstr ""
+msgstr "Morate koristiti WordPress 4.7.0. ili noviju verziju."
 
 #: ../functions.php:34
 msgid "Invalid WordPress version"
-msgstr ""
+msgstr "Nevažeća WordPress verzija"
 
 #: ../functions.php:43
 msgid "You must run <code>composer install</code> from the Sage directory."
@@ -44,7 +45,7 @@ msgstr ""
 
 #: ../functions.php:44
 msgid "Autoloader not found."
-msgstr ""
+msgstr "Autoloader nije nađen."
 
 #: ../functions.php:59
 #, php-format
@@ -53,44 +54,44 @@ msgstr ""
 
 #: ../functions.php:115
 msgid "Custom Settings"
-msgstr ""
+msgstr "Custom podešavanja"
 
 #: ../functions.php:116
 msgid "Settings"
-msgstr ""
+msgstr "Podešavanja"
 
 #: ../functions.php:125
 msgid "Save"
-msgstr ""
+msgstr "Sačuvaj"
 
 #: ../piklist/parts/meta-boxes/classroom.php:9
 #: ../piklist/parts/terms/classroom.php:9
 msgid "N°, Address"
-msgstr ""
+msgstr "Adresa"
 
 #: ../piklist/parts/meta-boxes/classroom.php:16
 msgid "Postal Code"
-msgstr ""
+msgstr "Poštanski broj"
 
 #: ../piklist/parts/meta-boxes/classroom.php:23
 #: ../piklist/parts/terms/classroom.php:23
 msgid "City"
-msgstr ""
+msgstr "Grad"
 
 #: ../piklist/parts/meta-boxes/classroom.php:30
 #: ../piklist/parts/terms/classroom.php:30
 msgid "Neighborhood"
-msgstr ""
+msgstr "Dio grada"
 
 #: ../piklist/parts/meta-boxes/classroom.php:37
 #: ../piklist/parts/terms/classroom.php:37
 msgid "Place"
-msgstr ""
+msgstr "Lokacija"
 
 #: ../piklist/parts/meta-boxes/classroom.php:47
 #: ../piklist/parts/terms/classroom.php:55
 msgid "Google Maps Short Link"
-msgstr ""
+msgstr "Google Maps skraćeni link"
 
 #: ../piklist/parts/meta-boxes/classroom.php:49
 #: ../piklist/parts/terms/classroom.php:57
@@ -113,9 +114,8 @@ msgid "Classroom color"
 msgstr ""
 
 #: ../piklist/parts/meta-boxes/classroom.php:73
-#: ../piklist/parts/terms/classroom.php:81
-msgid "This classroom requires special shoes on the dancefloor"
-msgstr ""
+msgid "This classroom requires special shoes for the dancefloor"
+msgstr "Molimo Vas ponesite posebnu obuću za ovaj čas."
 
 #: ../piklist/parts/meta-boxes/classroom.php:82
 #: ../piklist/parts/terms/classroom.php:90
@@ -129,28 +129,29 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:16
 #: ../piklist/parts/meta-boxes/course.php:60
+#: ../views/course/table-details.blade.php:9
 msgid "Level"
-msgstr ""
+msgstr "Nivo"
 
 #: ../piklist/parts/meta-boxes/course.php:21
 msgid "Beginner"
-msgstr ""
+msgstr "Početni"
 
 #: ../piklist/parts/meta-boxes/course.php:22
 msgid "Intermediate"
-msgstr ""
+msgstr "Srednji"
 
 #: ../piklist/parts/meta-boxes/course.php:23
 msgid "Advanced"
-msgstr ""
+msgstr "Napredni"
 
 #: ../piklist/parts/meta-boxes/course.php:24
 msgid "All levels"
-msgstr ""
+msgstr "Svi nivoi"
 
 #: ../piklist/parts/meta-boxes/course.php:30
 msgid "Level Number"
-msgstr ""
+msgstr "Broj nivoa"
 
 #: ../piklist/parts/meta-boxes/course.php:69
 msgid "Level text"
@@ -162,7 +163,7 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:77
 msgid "required Level"
-msgstr ""
+msgstr "Nivo potreban za prijavu"
 
 #: ../piklist/parts/meta-boxes/course.php:80
 msgid "ex: 4 months"
@@ -170,43 +171,43 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:85
 msgid "Start date"
-msgstr ""
+msgstr "Datum početka kursa"
 
 #: ../piklist/parts/meta-boxes/course.php:93
 msgid "End date"
-msgstr ""
+msgstr "Datum završetka kursa"
 
 #: ../piklist/parts/meta-boxes/course.php:101
 msgid "Session period"
-msgstr ""
+msgstr "Ciklus"
 
 #: ../piklist/parts/meta-boxes/course.php:126
 msgid "Start Time"
-msgstr ""
+msgstr "Vrijeme početka"
 
 #: ../piklist/parts/meta-boxes/course.php:133
 msgid "End Time"
-msgstr ""
+msgstr "Vrijeme završetka"
 
 #: ../piklist/parts/meta-boxes/course.php:140
 msgid "Start time - Finish time"
-msgstr ""
+msgstr "Vrijeme početka - Vrijeme završetka"
 
 #: ../piklist/parts/meta-boxes/course.php:151
 msgid "Teacher(s)"
-msgstr ""
+msgstr "Instruktor(i)"
 
 #: ../piklist/parts/meta-boxes/course.php:162
 msgid "Holidays"
-msgstr ""
+msgstr "Praznici"
 
 #: ../piklist/parts/meta-boxes/course.php:171
 msgid "Attention Message"
-msgstr ""
+msgstr "Napomena"
 
 #: ../piklist/parts/meta-boxes/course.php:220
 msgid "Full Price"
-msgstr ""
+msgstr "Cijena"
 
 #: ../piklist/parts/meta-boxes/course.php:223
 msgid "ex: 160"
@@ -214,7 +215,7 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:228
 msgid "Reduced Price"
-msgstr ""
+msgstr "Cijena sa popustom"
 
 #: ../piklist/parts/meta-boxes/course.php:231
 msgid "ex: 140"
@@ -225,8 +226,9 @@ msgid "Multi Pricing"
 msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:247
+#: ../views/course/table-details.blade.php:77
 msgid "Price"
-msgstr ""
+msgstr "Cijena"
 
 #: ../piklist/parts/meta-boxes/course.php:253
 msgid "Course Type"
@@ -234,11 +236,11 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:258
 msgid "class"
-msgstr ""
+msgstr "čas"
 
 #: ../piklist/parts/meta-boxes/course.php:259
 msgid "workshop"
-msgstr ""
+msgstr "radionica"
 
 #: ../piklist/parts/meta-boxes/course.php:265
 msgid "Gravity Form ID"
@@ -246,6 +248,10 @@ msgstr ""
 
 #: ../piklist/parts/meta-boxes/course.php:268
 msgid "Ex: 23. If left empty it will display the default weekly class form "
+msgstr ""
+
+#: ../piklist/parts/settings/design-settings.php:14
+msgid "Display News title"
 msgstr ""
 
 #: ../piklist/parts/settings/general-settings.php:13
@@ -259,31 +265,36 @@ msgstr ""
 #: ../piklist/parts/settings/general-settings.php:27
 #: ../piklist/parts/users/profs.php:23
 msgid "Phone number"
-msgstr ""
+msgstr "Broj telefona"
 
 #: ../piklist/parts/settings/general-settings.php:35
 msgid "Bank Details"
-msgstr ""
+msgstr "Bankovni detalji"
 
 #: ../piklist/parts/settings/general-settings.php:43
+#: ../views/homepage.blade.php:47 ../views/schedule/info-header.blade.php:7
 msgid "Schedule"
-msgstr ""
+msgstr "Raspored"
 
 #: ../piklist/parts/settings/pricing-settings.php:15
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #: ../piklist/parts/settings/pricing-settings.php:208
 msgid "Class Price"
-msgstr ""
+msgstr "Cijena kursa"
 
 #: ../piklist/parts/terms/classroom.php:16
 msgid "ZIP Code"
-msgstr ""
+msgstr "ZIP kod"
 
 #: ../piklist/parts/terms/classroom.php:47
 msgid "Entry code"
 msgstr ""
+
+#: ../piklist/parts/terms/classroom.php:81
+msgid "This classroom requires special shoes on the dancefloor"
+msgstr "Ova sala zahtijeva posebnu obuću"
 
 #: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
 msgid "Add File(s)"
@@ -303,19 +314,47 @@ msgstr ""
 
 #: ../piklist/parts/users/profs.php:44
 msgid "Styles & Talents"
-msgstr ""
+msgstr "Vrste plesa"
 
 #: ../piklist/parts/users/profs.php:52
 msgid "Accomplishments"
-msgstr ""
+msgstr "Postignuća"
 
 #: ../views/course/section-classroom.blade.php:15
 msgid "Open on Google maps"
-msgstr ""
+msgstr "Otvori Google mapu"
 
-#: ../views/course/table-details.blade.php:49
+#: ../views/course/table-details.blade.php:25
+msgid "Day"
+msgstr "Dan"
+
+#: ../views/course/table-details.blade.php:37
+msgid "Time"
+msgstr "Vrijeme"
+
+#: ../views/course/table-details.blade.php:44
+msgid "Period"
+msgstr "Ciklus"
+
+#: ../views/course/table-details.blade.php:56
+msgid "Required level"
+msgstr "Potreban nivo"
+
+#: ../views/course/table-details.blade.php:63
+msgid "Teacher"
+msgstr "Instruktor"
+
+#: ../views/course/table-details.blade.php:68
 msgid "Not available"
-msgstr ""
+msgstr "Nije dostupno"
+
+#: ../views/homepage.blade.php:18
+msgid "News"
+msgstr "Novosti"
+
+#: ../views/teachers.blade.php:17
+msgid "Company Dancers"
+msgstr "Show grupa"
 
 #~ msgid "Continued"
 #~ msgstr "Nastavljeno"

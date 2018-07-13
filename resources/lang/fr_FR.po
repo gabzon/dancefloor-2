@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dancefloor\n"
-"POT-Creation-Date: 2018-06-26 16:43+0100\n"
+"POT-Creation-Date: 2018-07-13 12:46+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -115,9 +115,8 @@ msgid "Classroom color"
 msgstr "Couleur de la salle"
 
 #: ../piklist/parts/meta-boxes/classroom.php:73
-#: ../piklist/parts/terms/classroom.php:81
-msgid "This classroom requires special shoes on the dancefloor"
-msgstr "Cette salle exige des chaussures specials"
+msgid "This classroom requires special shoes for the dancefloor"
+msgstr "Veuillez apportez des chausseurs de danse pour cette salle"
 
 #: ../piklist/parts/meta-boxes/classroom.php:82
 #: ../piklist/parts/terms/classroom.php:90
@@ -131,6 +130,7 @@ msgstr "Titre"
 
 #: ../piklist/parts/meta-boxes/course.php:16
 #: ../piklist/parts/meta-boxes/course.php:60
+#: ../views/course/table-details.blade.php:9
 msgid "Level"
 msgstr "Niveau"
 
@@ -227,6 +227,7 @@ msgid "Multi Pricing"
 msgstr "Multi prix"
 
 #: ../piklist/parts/meta-boxes/course.php:247
+#: ../views/course/table-details.blade.php:77
 msgid "Price"
 msgstr "Prix"
 
@@ -252,6 +253,14 @@ msgstr ""
 "Ex: 23. Lorsque le champs est laissé vide il va afficher la classe semanal "
 "par défaut"
 
+#: ../piklist/parts/settings/design-settings.php:14
+msgid "Display News title"
+msgstr "Affichez le titre \"Actualités\""
+
+#: ../piklist/parts/settings/design-settings.php:24
+msgid "Display a message in the Schedule page"
+msgstr "Afficher un message dans la page Horaire"
+
 #: ../piklist/parts/settings/general-settings.php:13
 msgid "Logo"
 msgstr "Logo"
@@ -270,6 +279,7 @@ msgid "Bank Details"
 msgstr "Coordonnées bancaires"
 
 #: ../piklist/parts/settings/general-settings.php:43
+#: ../views/homepage.blade.php:47 ../views/schedule/info-header.blade.php:7
 msgid "Schedule"
 msgstr "Planning"
 
@@ -288,6 +298,10 @@ msgstr "NPA"
 #: ../piklist/parts/terms/classroom.php:47
 msgid "Entry code"
 msgstr "Code d'entrée"
+
+#: ../piklist/parts/terms/classroom.php:81
+msgid "This classroom requires special shoes on the dancefloor"
+msgstr "Cette salle exige des chaussures specials"
 
 #: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
 msgid "Add File(s)"
@@ -317,9 +331,45 @@ msgstr "Réalisations"
 msgid "Open on Google maps"
 msgstr "Ouvrir en google maps"
 
-#: ../views/course/table-details.blade.php:49
+#: ../views/course/table-details.blade.php:25
+msgid "Day"
+msgstr "Jour"
+
+#: ../views/course/table-details.blade.php:37
+msgid "Time"
+msgstr "Heure"
+
+#: ../views/course/table-details.blade.php:44
+msgid "Period"
+msgstr "Période"
+
+#: ../views/course/table-details.blade.php:56
+msgid "Required level"
+msgstr "Niveau requis"
+
+#: ../views/course/table-details.blade.php:63
+msgid "Teacher"
+msgstr "Prof"
+
+#: ../views/course/table-details.blade.php:68
 msgid "Not available"
 msgstr "Pas disponible"
+
+#: ../views/homepage.blade.php:18
+msgid "News"
+msgstr "Actualités"
+
+#: ../views/schedule.blade.php:20
+msgid "Open enrollment"
+msgstr "Inscriptions ouvertes"
+
+#: ../views/schedule/info-header.blade.php:13
+msgid "Bank info"
+msgstr "Coordonnées bancaires"
+
+#: ../views/teachers.blade.php:17
+msgid "Company Dancers"
+msgstr "Troope de dance"
 
 #~ msgid "Form Title"
 #~ msgstr "Titre du Formulaire"

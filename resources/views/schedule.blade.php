@@ -11,9 +11,22 @@ a.btn-social, .btn-social { padding-top: 12px; }
 $dancefloor_options = get_option('dancefloor_settings');
 $bank_details = $dancefloor_options['bank_details'];
 $schedule = $dancefloor_options['schedule'];
+$schedule_message = $dancefloor_options['df_schedule_message'];
 @endphp
 
 @section('content')
+  @if ($schedule_message)
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong><?= __('Open enrollment','sage'); ?>!</strong> <br>
+      @php
+      echo $schedule_message
+      @endphp
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  @endif
+
   @include('schedule.info-header')
   <br>
   @include('schedule.classes-per-day')
