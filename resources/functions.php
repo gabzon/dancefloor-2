@@ -108,6 +108,10 @@ Container::getInstance()
 }, true);
 
 
+
+add_role( 'teacher',    __( 'Teacher','sage' ),     array( 'read' => true, 'edit_posts' => true, 'delete_posts' => true) );
+add_role( 'assistant',  __( 'Assistant','sage' ),   array( 'read' => true, 'edit_posts' => true, 'delete_posts' => true) );
+
 add_filter('piklist_admin_pages', 'piklist_theme_setting_pages');
 function piklist_theme_setting_pages($pages)
 {

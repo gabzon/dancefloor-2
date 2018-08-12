@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-07-03 16:20+0100\n"
+"POT-Creation-Date: 2018-08-12 15:12+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,15 +52,23 @@ msgstr "Autoloader nije nađen."
 msgid "Error locating <code>%s</code> for inclusion."
 msgstr ""
 
-#: ../functions.php:115
+#: ../functions.php:112 ../views/course/table-details.blade.php:63
+msgid "Teacher"
+msgstr "Instruktor"
+
+#: ../functions.php:113
+msgid "Assistant"
+msgstr ""
+
+#: ../functions.php:119
 msgid "Custom Settings"
 msgstr "Custom podešavanja"
 
-#: ../functions.php:116
+#: ../functions.php:120
 msgid "Settings"
 msgstr "Podešavanja"
 
-#: ../functions.php:125
+#: ../functions.php:129
 msgid "Save"
 msgstr "Sačuvaj"
 
@@ -254,6 +262,10 @@ msgstr ""
 msgid "Display News title"
 msgstr ""
 
+#: ../piklist/parts/settings/design-settings.php:24
+msgid "Display a message in the Schedule page"
+msgstr ""
+
 #: ../piklist/parts/settings/general-settings.php:13
 msgid "Logo"
 msgstr ""
@@ -310,7 +322,7 @@ msgstr ""
 
 #: ../piklist/parts/users/profs.php:30
 msgid "facebook"
-msgstr ""
+msgstr "facebook"
 
 #: ../piklist/parts/users/profs.php:44
 msgid "Styles & Talents"
@@ -340,10 +352,6 @@ msgstr "Ciklus"
 msgid "Required level"
 msgstr "Potreban nivo"
 
-#: ../views/course/table-details.blade.php:63
-msgid "Teacher"
-msgstr "Instruktor"
-
 #: ../views/course/table-details.blade.php:68
 msgid "Not available"
 msgstr "Nije dostupno"
@@ -351,6 +359,42 @@ msgstr "Nije dostupno"
 #: ../views/homepage.blade.php:18
 msgid "News"
 msgstr "Novosti"
+
+#: ../views/schedule.blade.php:20
+msgid "Open enrollment"
+msgstr ""
+
+#: ../views/schedule/classes-per-day.blade.php:19
+msgid "Monday"
+msgstr "Ponedjeljak"
+
+#: ../views/schedule/classes-per-day.blade.php:20
+msgid "Tuesday"
+msgstr "Utorak"
+
+#: ../views/schedule/classes-per-day.blade.php:21
+msgid "Wednesday"
+msgstr "Srijeda"
+
+#: ../views/schedule/classes-per-day.blade.php:22
+msgid "Thursday"
+msgstr "Četvrtak"
+
+#: ../views/schedule/classes-per-day.blade.php:23
+msgid "Friday"
+msgstr "Petak"
+
+#: ../views/schedule/classes-per-day.blade.php:24
+msgid "Saturday"
+msgstr "Subota"
+
+#: ../views/schedule/classes-per-day.blade.php:25
+msgid "Sunday"
+msgstr "Nedjelja"
+
+#: ../views/schedule/info-header.blade.php:13
+msgid "Bank details"
+msgstr ""
 
 #: ../views/teachers.blade.php:17
 msgid "Company Dancers"

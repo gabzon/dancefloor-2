@@ -1,4 +1,5 @@
 @php( $classroom = Course::get_classroom($key) )
+
 <a href="<?= esc_url(get_permalink($key)); ?>" class="course black hover-dark-gray">
   <div class="course-link pl2 grow hover-bg-near-white" style="border-left: 5px solid {{ get_term_meta($classroom[0]->term_id, 'classroom_color', true) }};">
     <span class="course-time"><?= get_post_meta($key,'course_start_time',true); ?> - <?= get_post_meta($key,'course_end_time',true); ?></span><br>

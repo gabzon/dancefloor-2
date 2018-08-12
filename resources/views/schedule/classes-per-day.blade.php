@@ -14,3 +14,13 @@
     @endif
   @endforeach
 </div>
+
+<?php
+__('Monday', 'sage');
+__('Tuesday', 'sage');
+__('Wednesday', 'sage');
+__('Thursday', 'sage');
+__('Friday', 'sage');
+__('Saturday','sage');
+__('Sunday','sage');
+?>
