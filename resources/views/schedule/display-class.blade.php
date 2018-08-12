@@ -12,7 +12,7 @@
         @endif
       </span><br>
     @endif
-    <span class="course-teacher"><?= __('Teacher','sage'); ?> <i lang="en" class="text-muted">(Teacher)</i> : {{ get_post_meta($key,'course_teacher',true) }}</span>
+    <span class="course-teacher"><?= __('Teacher(s)','sage'); ?> <i lang="en" class="text-muted">(Teacher)</i> : {{ get_post_meta($key,'course_teacher',true) }}</span>
     <br>
     {{-- @if ($room)
       <span class="course-time">Lieu <i lang="en" class="text-muted">(Place)</i> : {{ get_the_title($room) }}</span>
