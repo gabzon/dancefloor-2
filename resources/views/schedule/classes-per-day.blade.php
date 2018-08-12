@@ -23,4 +23,11 @@ __('Thursday', 'sage');
 __('Friday', 'sage');
 __('Saturday','sage');
 __('Sunday','sage');
+__('monday', 'sage');
+__('tuesday', 'sage');
+__('wednesday', 'sage');
+__('thursday', 'sage');
+__('friday', 'sage');
+__('saturday','sage');
+__('sunday','sage');
 ?>

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-08-12 15:12+0100\n"
+"POT-Creation-Date: 2018-08-12 15:23+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -391,6 +391,34 @@ msgstr "Subota"
 #: ../views/schedule/classes-per-day.blade.php:25
 msgid "Sunday"
 msgstr "Nedjelja"
+
+#: ../views/schedule/classes-per-day.blade.php:26
+msgid "monday"
+msgstr "ponedjeljak"
+
+#: ../views/schedule/classes-per-day.blade.php:27
+msgid "tuesday"
+msgstr "utorak"
+
+#: ../views/schedule/classes-per-day.blade.php:28
+msgid "wednesday"
+msgstr "srijeda"
+
+#: ../views/schedule/classes-per-day.blade.php:29
+msgid "thursday"
+msgstr "četvrtak"
+
+#: ../views/schedule/classes-per-day.blade.php:30
+msgid "friday"
+msgstr "petak"
+
+#: ../views/schedule/classes-per-day.blade.php:31
+msgid "saturday"
+msgstr "subota"
+
+#: ../views/schedule/classes-per-day.blade.php:32
+msgid "sunday"
+msgstr "nedjelja"
 
 #: ../views/schedule/info-header.blade.php:13
 msgid "Bank details"
