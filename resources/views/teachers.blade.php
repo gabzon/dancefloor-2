@@ -13,8 +13,8 @@ Template Name: Teachers
     @php( $profs = get_users( 'role=teacher' ) )
     @php( $indice = 100 )
     @php( $i = 0 )
-
-    <h3><?= //__('Company Dancers','sage') ?></h3>
+    {{-- __('Company Dancers','sage') --}}
+    
     <h3><?= __('Team','sage') ?></h3>
 
     <div class="row">
