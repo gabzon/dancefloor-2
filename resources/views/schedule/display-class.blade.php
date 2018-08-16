@@ -10,7 +10,7 @@
     <strong class="primary-color"><?= get_post_meta($key, 'course_title',true); ?></strong><br>
     @if (get_post_meta($key,'course_level',true))
       <span class="secondary-color">
-        {{ _e(get_post_meta($key,'course_level',true),'sage') }}
+        <?= __('Level','sage') ?>: {{ _e(get_post_meta($key,'course_level',true),'sage') }}
         @if (get_post_meta($key,'course_level_number',true))
           ({{_e('Level','sage')}} {{get_post_meta($key,'course_level_number',true)}})
         @endif
