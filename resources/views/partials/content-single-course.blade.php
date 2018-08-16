@@ -19,6 +19,9 @@
     {{--  Table & Content section --}}
     <div class="row">
       <div class="col-md-4">
+        @if (get_the_post_thumbnail_url($post->ID,'full'))
+          <img src="<?php echo get_the_post_thumbnail_url($post->ID,'full'); ?>" alt="" class="img-fluid" />
+        @endif
         @include('course/table-details')
       </div>
 
