@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-08-12 15:23+0100\n"
+"POT-Creation-Date: 2018-08-16 16:11+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -202,6 +202,7 @@ msgid "Start time - Finish time"
 msgstr "Vrijeme početka - Vrijeme završetka"
 
 #: ../piklist/parts/meta-boxes/course.php:151
+#: ../views/schedule/display-class.blade.php:19
 msgid "Teacher(s)"
 msgstr "Instruktor(i)"
 
@@ -266,6 +267,10 @@ msgstr ""
 msgid "Display a message in the Schedule page"
 msgstr ""
 
+#: ../piklist/parts/settings/design-settings.php:44
+msgid "Display color bar in schedule according to:"
+msgstr ""
+
 #: ../piklist/parts/settings/general-settings.php:13
 msgid "Logo"
 msgstr ""
@@ -307,6 +312,10 @@ msgstr ""
 #: ../piklist/parts/terms/classroom.php:81
 msgid "This classroom requires special shoes on the dancefloor"
 msgstr "Ova sala zahtijeva posebnu obuću"
+
+#: ../piklist/parts/terms/style.php:10
+msgid "Style color"
+msgstr ""
 
 #: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
 msgid "Add File(s)"
@@ -424,9 +433,12 @@ msgstr "nedjelja"
 msgid "Bank details"
 msgstr ""
 
-#: ../views/teachers.blade.php:17
-msgid "Company Dancers"
-msgstr "Show grupa"
+#: ../views/teachers.blade.php:18
+msgid "The Team"
+msgstr "Naš tim"
+
+#~ msgid "Company Dancers"
+#~ msgstr "Show grupa"
 
 #~ msgid "Continued"
 #~ msgstr "Nastavljeno"
