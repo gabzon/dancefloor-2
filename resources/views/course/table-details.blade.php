@@ -60,7 +60,7 @@
 
   @if ( get_post_meta($post->ID,'course_teacher', true) )
     <tr>
-      <td><strong><?= __('Teachers','sage'); ?> <i class="text-muted i" lang="en">(Teachers)</i> :</strong></td>
+      <td><strong><?= __('Teacher(s)','sage'); ?> <i class="text-muted i" lang="en">(Teachers)</i> :</strong></td>
       <td>
         <?php if (get_post_meta($post->ID,'course_teacher', true)): ?>
           <?= get_post_meta($post->ID,'course_teacher', true); ?>
