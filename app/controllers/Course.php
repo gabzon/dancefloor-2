@@ -138,6 +138,12 @@ class Course extends Controller
     return $classroom;
   }
 
+  public static function get_style( $key )
+  {
+    $style = wp_get_post_terms( $key, 'style');
+    return $style;
+  }
+
   public static function get_levels( $key )
   {
     $levels = wp_get_post_terms( $key, 'level');
@@ -225,4 +231,21 @@ class Course extends Controller
     return $class;
   }
 
+  public static function get_color_bar($classroom, $style){
+    $dancefloor_options = get_option('dancefloor_settings');
+
+    if ($dancefloor_options['df_display_schedule_color'] == 'style') {
+      if($style){
+        return get_term_meta($style[0]->term_id, 'style_color', true);
+      }else {
+        return 'black';
+      }
+    }else{
+      if($classroom){
+        return get_term_meta($classroom[0]->term_id, 'classroom_color', true);
+      }else {
+        return 'black';
+      }
+    }
+  }
 }

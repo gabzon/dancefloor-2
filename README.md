@@ -35,6 +35,12 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 ## Version 2.4
 <!-- * Add Favorite posts -->
 <!-- * Adapt favorite posts to be Inscription -->
+- Separete colors for classes
+- Teacher title (roles)
+- display Schedule mobile
+- Blog
+-
+
 
 
 ## Meeting

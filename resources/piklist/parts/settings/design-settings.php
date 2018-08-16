@@ -36,3 +36,14 @@ piklist('field',[
     )
   )
 ]);
+
+piklist('field', [
+  'type'      => 'select',
+  'field'     => 'df_display_schedule_color',
+  'value'     => 'style',
+  'label'     => __('Display color bar in schedule according to:','sage'),
+  'choices'   => [
+    'style' => 'style',
+    'classroom' => 'classroom',
+  ]
+]);
