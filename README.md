@@ -38,10 +38,6 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 - Separete colors for classes
 - Teacher title (roles)
 - display Schedule mobile
-- Blog
--
-
-
 
 ## Meeting
 - inscription buttons

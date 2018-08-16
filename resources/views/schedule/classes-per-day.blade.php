@@ -3,7 +3,7 @@
   @foreach ($days as $d)
     @php( $class = Course::class($d) )
     @if ( $class->have_posts() )
-      <div class="col">
+      <div class="col-12 col-xs-6 col-md-6 col-lg-3">
         <h4 class="f4 pb1 ttc"><?= __($d, 'sage'); ?></h4>
           @while ( $class->have_posts() )
             @php( $class->the_post() )
