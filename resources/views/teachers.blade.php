@@ -14,7 +14,8 @@ Template Name: Teachers
     @php( $indice = 100 )
     @php( $i = 0 )
 
-    <h3><?= __('Company Dancers','sage') ?></h3>
+    {{-- <h3><?= //__('Company Dancers','sage') ?></h3> --}}
+    <h3><?= __('Team','sage') ?></h3>
 
     <div class="row">
       @foreach ($profs as $user)

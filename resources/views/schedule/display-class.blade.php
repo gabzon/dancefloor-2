@@ -3,7 +3,7 @@
 
 <a href="<?= esc_url(get_permalink($key)); ?>" class="course black hover-dark-gray">
   @php
-    $color_bar = Course::get_color_bar($classroom,$style);    
+    $color_bar = Course::get_color_bar($classroom,$style);
   @endphp
   <div class="course-link pl2 grow hover-bg-near-white" style="border-left: 5px solid {{ $color_bar }};">
     <span class="course-time"><?= get_post_meta($key,'course_start_time',true); ?> - <?= get_post_meta($key,'course_end_time',true); ?></span><br>
@@ -16,7 +16,7 @@
         @endif
       </span><br>
     @endif
-    <span class="course-teacher"><?= __('Teacher(s)','sage'); ?> <i lang="en" class="text-muted">(Teacher)</i> : {{ get_post_meta($key,'course_teacher',true) }}</span>
+    <span class="course-teacher"><?= __('Teacher(s)','sage'); ?> <i lang="en" class="text-muted">(Teachers)</i> : {{ get_post_meta($key,'course_teacher',true) }}</span>
     <br>
     {{-- @if ($room)
       <span class="course-time">Lieu <i lang="en" class="text-muted">(Place)</i> : {{ get_the_title($room) }}</span>
