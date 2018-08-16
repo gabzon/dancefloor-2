@@ -35,9 +35,7 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 ## Version 2.4
 <!-- * Add Favorite posts -->
 <!-- * Adapt favorite posts to be Inscription -->
-- Separete colors for classes
-- Teacher title (roles)
-- display Schedule mobile
+
 
 ## Meeting
 - inscription buttons
@@ -54,6 +52,10 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * Add alert message on Schedule page
 * translation Serbian language
 * Added support for changing the logo
+* Separete colors for classes
+* Teacher title (roles)
+* display Schedule mobile
+* display feature image in course single
 
 ## Version 2.3
 * Display correct Form according to the classes/Workshops , needs gravity form id (Default '23')

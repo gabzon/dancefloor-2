@@ -65,6 +65,7 @@ array_map(function ($file) use ($sage_error) {
   'admin',
   'walker',
   'teachers',
+  'facebook',
   'api/featured-image',
   'api/rand_query',
   'taxonomy/day',
