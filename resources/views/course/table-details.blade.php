@@ -87,15 +87,21 @@
     @endif
   </tr>
 
-  <tr>
-    <td colspan="2" style="padding:0.75rem 0;">
-      <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href="#inscription">
-        <i class="far fa-edit"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
-      </a>
-      {{-- <div class="mv2"></div>
-      @php
-      the_favorites_button($post->ID);
-    @endphp --}}
-  </td>
-</tr>
+  @php($dancefloor_options = get_option('dancefloor_settings'))
+  @if ( $dancefloor_options['df_display_inscription_button'] == 'yes' )
+    <tr>
+
+      <td colspan="2" style="padding:0.75rem 0;">
+        <a class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center pa3 ba border-box w-100" href="#inscription">
+          <i class="far fa-edit"></i>&nbsp; Inscription &nbsp;<i lang="en"> (Registration)</i>
+        </a>
+        {{-- <div class="mv2"></div>
+        @php
+        the_favorites_button($post->ID);
+      @endphp --}}
+    </td>
+  </tr>
+  @endif
+
+
 </table>

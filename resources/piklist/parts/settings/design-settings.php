@@ -47,3 +47,14 @@ piklist('field', [
     'classroom' => 'classroom',
   ]
 ]);
+
+piklist('field', [
+  'type'      => 'select',
+  'field'     => 'df_display_inscription_button',
+  'value'     => 'yes',
+  'label'     => __('Display inscription button in course page:','sage'),
+  'choices'   => [
+    'yes' => 'yes',
+    'no' => 'no',
+  ]
+]);
