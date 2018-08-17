@@ -38,7 +38,7 @@ if ( ! function_exists( 'style' ) ) {
       'show_tagcloud'              => true,
       'show_in_rest'               => true,
     );
-    register_taxonomy( 'style', array( 'course' ), $args );
+    register_taxonomy( 'style', array( 'course','post' ), $args );
 
   }
   add_action( 'init', 'style', 0 );

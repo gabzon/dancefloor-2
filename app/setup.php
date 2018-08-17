@@ -55,6 +55,8 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
 
+    add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'video' ) );
+
     /**
      * Enable selective refresh for widgets in customizer
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
