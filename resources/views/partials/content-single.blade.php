@@ -1,11 +1,11 @@
 <article @php(post_class())>
   <div class="row">
     <div class="col-3">
-      <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="ui image" />
+      <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="img-fluid" style="padding-top:6px;"/>
     </div>
     <div class="col-9">
-      <header class="article-title" style="margin-top:15px;">
-        <h1 style="margin-bottom:0">@php(the_title())</h1>
+      <header class="article-title">
+        <h1 style="margin:0">@php(the_title())</h1>
         <small style="color:grey">@include('partials/entry-meta')</small>
       </header>
       <div class="entry-content">
