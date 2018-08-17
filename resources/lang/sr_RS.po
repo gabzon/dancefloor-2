@@ -95,7 +95,7 @@ msgstr "Dio grada"
 #: ../piklist/parts/terms/classroom.php:37
 #: ../views/schedule/display-class.blade.php:25
 msgid "Place"
-msgstr "Lokacija"
+msgstr "Mjesto"
 
 #: ../piklist/parts/meta-boxes/classroom.php:47
 #: ../piklist/parts/terms/classroom.php:55
