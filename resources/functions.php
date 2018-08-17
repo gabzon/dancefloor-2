@@ -133,6 +133,23 @@ function piklist_theme_setting_pages($pages)
   return $pages;
 }
 
+// http://girliegeek.com/exclude-specific-post-formats-from-main-loop/
+function exclude_video_post_formats( $query ) {
+  if ( $query->is_main_query() && $query->is_home() ) {
+    $tax_query = array(
+      array(
+        'taxonomy'  => 'post_format',
+        'field'     => 'slug',
+        'terms'     => array('post-format-video'),
+        'operator'  => 'NOT IN',
+      )
+    );
+    $query->set( 'tax_query', $tax_query );
+  }
+}
+
+add_action( 'pre_get_posts', 'exclude_video_post_formats' );
+
 // add_action('wp_head', 'show_template');
 // function show_template() {
 // 	global $template;
