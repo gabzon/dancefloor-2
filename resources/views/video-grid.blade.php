@@ -17,6 +17,7 @@ Template Name: Video Grid
 @php( $urban_salsa = Video::get_videos('urban-salsa') )
 @php( $pachanga = Video::get_videos('pachanga') )
 @php( $tango = Video::get_videos('tango') )
+@php( $mix = Video::get_videos('mix') )
 
 @extends('layouts.app')
 
@@ -32,6 +33,9 @@ Template Name: Video Grid
   @endif
   @if ( $tango->have_posts() )
     <a href="#tango-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Tango</a>
+  @endif
+  @if ( $mix->have_posts() )
+    <a href="#mix-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Mix</a>
   @endif
 
   {{-- Salsa Cubana --}}
@@ -108,4 +112,25 @@ Template Name: Video Grid
       </div>
     </section>
   @endif
+
+
+  {{-- Tango --}}
+  @if ( $mix->have_posts() )
+    <section id="mix-videos" class="pt5">
+      <h1>Mix</h1>
+      <hr>
+      <div class="row">
+        @while ( $mix->have_posts() )
+          @php( $mix->the_post() )
+          <div class="col-12 col-xs-6 col-md-4 col-lg-4 mb3">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="{{ get_the_content() }}" allowfullscreen></iframe>
+            </div>
+          </div>
+        @endwhile
+      </div>
+    </section>
+  @endif
+
+
 @endsection
