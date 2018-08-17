@@ -23,19 +23,19 @@ Template Name: Video Grid
 
 @section('content')
   @if ( $salsa->have_posts() )
-    <a href="#salsa-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Salsa</a>
-  @endif
-  @if ( $rueda->have_posts() )
-    <a href="#rueda-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Rueda de Casino</a>
-  @endif
-  @if ( $bachata->have_posts() )
-    <a href="#bachata-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Bachata</a>
+    <a href="#salsa-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 ma2 pv2 ba border-box">Salsa</a>
   @endif
   @if ( $tango->have_posts() )
-    <a href="#tango-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Tango</a>
+    <a href="#tango-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Tango</a>
+  @endif
+  @if ( $rueda->have_posts() )
+    <a href="#rueda-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Rueda de Casino</a>
+  @endif
+  @if ( $bachata->have_posts() )
+    <a href="#bachata-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Bachata</a>
   @endif
   @if ( $mix->have_posts() )
-    <a href="#mix-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ba border-box">Mix</a>
+    <a href="#mix-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Mix</a>
   @endif
 
   {{-- Salsa Cubana --}}
@@ -76,14 +76,14 @@ Template Name: Video Grid
   @endif
 
 
-  {{-- Bachata --}}
-  @if ( $bachata->have_posts() )
-    <section id="bachata-videos" class="pt5">
-      <h1>Bachata</h1>
+  {{-- Tango --}}
+  @if ( $tango->have_posts() )
+    <section id="tango-videos" class="pt5">
+      <h1>Tango</h1>
       <hr>
       <div class="row">
-        @while ( $bachata->have_posts() )
-          @php( $bachata->the_post() )
+        @while ( $tango->have_posts() )
+          @php( $tango->the_post() )
           <div class="col-12 col-xs-6 col-md-4 col-lg-4 mb3">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="{{ get_the_content() }}" allowfullscreen></iframe>
@@ -95,14 +95,14 @@ Template Name: Video Grid
   @endif
 
 
-  {{-- Tango --}}
-  @if ( $tango->have_posts() )
-    <section id="tango-videos" class="pt5">
-      <h1>Tango</h1>
+  {{-- Bachata --}}
+  @if ( $bachata->have_posts() )
+    <section id="bachata-videos" class="pt5">
+      <h1>Bachata</h1>
       <hr>
       <div class="row">
-        @while ( $tango->have_posts() )
-          @php( $tango->the_post() )
+        @while ( $bachata->have_posts() )
+          @php( $bachata->the_post() )
           <div class="col-12 col-xs-6 col-md-4 col-lg-4 mb3">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="{{ get_the_content() }}" allowfullscreen></iframe>
