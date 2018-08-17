@@ -36,7 +36,7 @@ Template Name: Video Grid
 
   {{-- Salsa Cubana --}}
   @if ( $salsa->have_posts() )
-    <section id="salsa-videos" class="mt3">
+    <section id="salsa-videos" class="pt3">
       <h1>Salsa</h1>
       <hr>
       <div class="row">
@@ -56,7 +56,7 @@ Template Name: Video Grid
 
   {{-- Rueda de Casino --}}
   @if ( $rueda->have_posts() )
-    <section id="rueda-videos" class="mt4">
+    <section id="rueda-videos" class="pt4">
       <h1>Rueda de Casino</h1>
       <hr>
       <div class="row">
@@ -76,7 +76,7 @@ Template Name: Video Grid
 
   {{-- Bachata --}}
   @if ( $bachata->have_posts() )
-    <section id="bachata-videos" class="mt4">
+    <section id="bachata-videos" class="pt4">
       <h1>Bachata</h1>
       <hr>
       <div class="row">
@@ -96,7 +96,7 @@ Template Name: Video Grid
 
   {{-- Tango --}}
   @if ( $tango->have_posts() )
-    <section id="tango-videos" class="mt4">
+    <section id="tango-videos" class="pt4">
       <h1>Tango</h1>
       <hr>
       <div class="row">
