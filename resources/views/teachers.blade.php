@@ -32,7 +32,11 @@ Template Name: Teachers
     <br>
     @php( $assistants = get_users( 'role=assistant' ) )
     @php( $indice = 0 )
-    <h3>{{ _e('Teachers','sage') }}</h3>
+
+    @if ( get_bloginfo( 'url' ) == 'http://www.dancefloorgenevasalsa.ch/')
+      <h3>{{ _e('Teachers','sage') }}</h3>
+    @endif
+
     <div class="row">
         <?php foreach ( $assistants as $user ) :?>
           <div class="col-12 col-sm-6 col-md-4 col-lg-4">
