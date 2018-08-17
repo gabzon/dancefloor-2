@@ -8,8 +8,8 @@
         <tr>
           <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
           <td width="95%">
-            <strong>{{ $classroom[0]->name }}</strong> ({{ get_term_meta($classroom[0]->term_id ,'classroom_quartier',true) }})<br>
-            <?= get_term_meta($classroom[0]->term_id,'classroom_address',true); ?><br>
+            <strong>{{ $classroom[0]->name }}</strong><br>
+            <?= get_term_meta($classroom[0]->term_id,'classroom_address',true); ?> ({{ get_term_meta($classroom[0]->term_id ,'classroom_quartier',true) }})<br>
             <?= get_term_meta($classroom[0]->term_id,'classroom_postal_code',true) . ', ' . get_term_meta($classroom[0]->term_id,'classroom_ville',true); ?><br>
             <a href="<?= get_term_meta($classroom[0]->term_id,'classroom_google_map_link',true); ?>" target="_blank">
               <?php _e('Open on Google maps','sage'); ?>
