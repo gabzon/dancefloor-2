@@ -22,7 +22,7 @@
       <span class="course-time">Lieu <i lang="en" class="text-muted">(Place)</i> : {{ get_the_title($room) }}</span>
     @endif --}}
     @if (count($classroom) > 0)
-      <span class="course-time">Lieu <i lang="en" class="text-muted">(Place)</i> : {{ $classroom[0]->name }}</span>
+      <span class="course-time"><?= __('Place','sage'); ?> <i lang="en" class="text-muted">(Place)</i> : {{ $classroom[0]->name }}</span>
     @endif
   </div>
 </a>

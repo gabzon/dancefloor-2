@@ -1,4 +1,4 @@
-<h3>Salle de cours <i class="text-muted" lang="en">(Classroom)</i></h3>
+<h3><?= __('Classroom','sage'); ?> <i class="text-muted" lang="en">(Classroom)</i></h3>
 
 @if (count($classroom) > 0)
 
