@@ -23,19 +23,19 @@ Template Name: Video Grid
 
 @section('content')
   @if ( $salsa->have_posts() )
-    <a href="#salsa-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 ma2 pv2 ba border-box">Salsa</a>
+    <a href="#salsa-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 ma1 pv2 ba border-box">Salsa</a>
   @endif
   @if ( $tango->have_posts() )
-    <a href="#tango-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Tango</a>
+    <a href="#tango-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma1 ba border-box">Tango</a>
   @endif
   @if ( $rueda->have_posts() )
-    <a href="#rueda-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Rueda de Casino</a>
+    <a href="#rueda-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma1 ba border-box">Rueda de Casino</a>
   @endif
   @if ( $bachata->have_posts() )
-    <a href="#bachata-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Bachata</a>
+    <a href="#bachata-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma1 ba border-box">Bachata</a>
   @endif
   @if ( $mix->have_posts() )
-    <a href="#mix-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma2 ba border-box">Mix</a>
+    <a href="#mix-videos" class="f5 no-underline dark-red bg-animate hover-bg-dark-red hover-white inline-flex items-center ph3 pv2 ma1 ba border-box">Mix</a>
   @endif
 
   {{-- Salsa Cubana --}}
