@@ -6,7 +6,7 @@ Template Name: Teachers
 
 @section('content')
     @while (have_posts()) @php(the_post())
-        @include('partials.page-header')
+        {{-- @include('partials.page-header') --}}
         @include('partials.content-page')
     @endwhile
 
@@ -16,7 +16,7 @@ Template Name: Teachers
     {{-- __('Company Dancers','sage') --}}
 
     <h3><?= __('The Team','sage') ?></h3>
-
+    <br>
     <div class="row">
       @foreach ($profs as $user)
         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
