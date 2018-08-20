@@ -7,7 +7,7 @@ Template Name: Teachers
 @section('content')
     @while (have_posts()) @php(the_post())
         {{-- @include('partials.page-header') --}}
-        @include('partials.content-page')
+        {{-- @include('partials.content-page') --}}
     @endwhile
 
     @php( $profs = get_users( 'role=teacher' ) )
