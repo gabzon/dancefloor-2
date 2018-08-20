@@ -1,6 +1,6 @@
 <?php
 
-function display_person($indice, $id, $email, $photo, $first_name, $last_name, $title, $description){
+function display_person($indice, $id, $email, $photo, $first_name, $last_name, $title, $description, $nickname){
   ?>
   <!-- Modal -->
   <div class="modal fade" id="myModal-<?= $indice ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -34,7 +34,12 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
       <img class="card-img-top card-img img-fluid " src="<?php echo get_avatar_url( $email, array('size'  => 512) ); ?>" alt="Card image cap"/>
     <?php endif; ?>
     <div class="card-body">
-      <h4 class="card-title"><h3><?= esc_html( $first_name ); ?> <?= esc_html( $last_name ); ?></h3></h4>
+      <?php $dancefloor_options = get_option('dancefloor_settings'); ?>
+      <?php if ( $dancefloor_options['df_display_team_member_name'] == 'nickname'): ?>
+        <h4 class="card-title ttc"><?= esc_html( $nickname ); ?></h4>
+      <?php else: ?>
+        <h4 class="card-title"><?= esc_html( $first_name ); ?> <?= esc_html( $last_name ); ?></h4>
+      <?php endif; ?>
       <p class="card-text text-muted"><?= esc_html($title); ?></p>
       <?php if (get_user_meta($id,'skills')): ?>
         <h5><?php _e('Skills'); ?></h5>

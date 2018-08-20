@@ -24,7 +24,7 @@ Template Name: Teachers
           @php( $photos = get_user_meta($user->ID,'photo') )
           @php( $photo = ($photos ? $photos[0] : '') )
           @php( $title = get_user_meta($user->ID,'title', true) )
-          @php( display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description) )
+          @php( display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description, $user->user_nicename) )
           @php( $indice++ )
         </div>
       @endforeach
@@ -44,7 +44,7 @@ Template Name: Teachers
             <?php $photos = get_user_meta($user->ID,'photo');?>
             <?php $photo = ($photos ? $photos[0] : ''); ?>
             <?php $title = get_user_meta($user->ID,'title', true); ?>
-            <?php display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description); ?>
+            <?php display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description, $user->user_nicename); ?>
             <?php $indice++ ?>
           </div>
         <?php endforeach ?>

@@ -58,3 +58,14 @@ piklist('field', [
     'no' => 'no',
   ]
 ]);
+
+piklist('field', [
+  'type'      => 'select',
+  'field'     => 'df_display_team_member_name',
+  'value'     => 'nickname',
+  'label'     => __('Display either nickname or fullname:','sage'),
+  'choices'   => [
+    'nickname' => 'Nickname',
+    'fullname' => 'Fullname',
+  ]
+]);
