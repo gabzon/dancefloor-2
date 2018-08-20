@@ -25,7 +25,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
 
 
 
-  <div class="card grow pointer pb2">
+  <div class="card grow pointer mb2">
     <?php if ($photo): ?>
       <a class="" type="button" data-toggle="modal" data-target="#myModal-<?= $indice; ?>">
         <img class="card-img-top img-fluid " src="<?= wp_get_attachment_url($photo); ?>" alt="Card image cap" />
