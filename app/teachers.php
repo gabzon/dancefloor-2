@@ -54,7 +54,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
         </span>
       <?php endif; ?>
     </div>
-    <div class="card-footer">
+    <div class="card-footer text-center">
       <a class="btn-social btn-google-plus" href="mailto:<?= esc_html($email); ?>"><i class="fa fa-envelope"></i></a>
       <?php if (get_user_meta($id,'facebook',true)): ?>
         <a class="btn-social bg-primary" href="<?= get_user_meta($id,'facebook',true); ?>"><i class="fa fa-facebook"></i></a>
