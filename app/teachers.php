@@ -33,7 +33,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
     <?php else: ?>
       <img class="card-img-top card-img img-fluid " src="<?php echo get_avatar_url( $email, array('size'  => 512) ); ?>" alt="Card image cap"/>
     <?php endif; ?>
-    <div class="card-body">
+    <div class="card-body text-center">
       <?php $dancefloor_options = get_option('dancefloor_settings'); ?>
       <?php if ( $dancefloor_options['df_display_team_member_name'] == 'nickname'): ?>
         <h4 class="card-title ttc"><?= esc_html( $nickname ); ?></h4>
