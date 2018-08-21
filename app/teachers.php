@@ -42,7 +42,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
       <?php endif; ?>
       <p class="card-text text-muted"><?= esc_html($title); ?></p>
       <?php if (get_user_meta($id,'skills')): ?>
-        <h5><?php _e('Skills'); ?></h5>
+        <h5><?php _e('Skills','sage'); ?></h5>
         <span>
           <?php $skills = get_user_meta($id,'skills'); ?>
           <?php for ($i = 0; $i < count($skills); $i++) : ?>

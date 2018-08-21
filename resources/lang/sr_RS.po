@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-08-17 18:00+0100\n"
+"POT-Creation-Date: 2018-08-21 10:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,6 +18,566 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 "X-Poedit-SearchPath-2: ../views\n"
+"X-Poedit-SearchPath-3: ../../app\n"
+
+#: ../../app/controllers/App.php:27
+msgid "Latest Posts"
+msgstr ""
+
+#: ../../app/controllers/App.php:33
+#, php-format
+msgid "Search Results for %s"
+msgstr ""
+
+#: ../../app/controllers/App.php:36 ../../app/taxonomy/classroom.php:25
+#: ../../app/taxonomy/day.php:25 ../../app/taxonomy/level.php:25
+#: ../../app/taxonomy/style.php:26
+msgid "Not Found"
+msgstr ""
+
+#: ../../app/controllers/Course.php:32
+msgid "We are not able to find any classroom currently"
+msgstr ""
+
+#: ../../app/controllers/Course.php:91
+msgid "There are no courses currently"
+msgstr ""
+
+#: ../../app/controllers/Lesson.php:17
+msgid "Enrolled members"
+msgstr ""
+
+#: ../../app/controllers/Lesson.php:32
+msgid "Not paid"
+msgstr ""
+
+#: ../../app/controllers/Lesson.php:51 ../../app/post-type/video.php:10
+#: ../../app/post-type/video.php:11
+msgid "Videos"
+msgstr ""
+
+#: ../../app/filters.php:33
+msgid "Continued"
+msgstr "Nastavljeno"
+
+#: ../../app/post-type/classroom.php:7 ../../app/post-type/classroom.php:8
+#: ../../app/post-type/classroom.php:28
+#: ../views/course/section-classroom.blade.php:1
+msgid "Classroom"
+msgstr "Lokacija"
+
+#: ../../app/post-type/classroom.php:9 ../../app/taxonomy/classroom.php:11
+msgid "Classrooms"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:10 ../../app/post-type/course.php:8
+msgid "Parent Item:"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:11 ../../app/taxonomy/classroom.php:12
+msgid "All Classrooms"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:12 ../../app/taxonomy/classroom.php:19
+msgid "View Classroom"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:13 ../../app/taxonomy/classroom.php:16
+msgid "Add New Classroom"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:14 ../../app/post-type/course.php:12
+#: ../../app/post-type/figure.php:17
+msgid "Add New"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:15 ../../app/taxonomy/classroom.php:17
+msgid "Edit Classroom"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:16 ../../app/taxonomy/classroom.php:18
+msgid "Update Classroom"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:17
+msgid "Search Classroom"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:18 ../../app/post-type/course.php:16
+#: ../../app/post-type/figure.php:24 ../../app/post-type/video.php:24
+msgid "Not found"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:19 ../../app/post-type/course.php:17
+#: ../../app/post-type/figure.php:25 ../../app/post-type/video.php:25
+msgid "Not found in Trash"
+msgstr ""
+
+#: ../../app/post-type/classroom.php:29
+msgid "List of classrooms"
+msgstr ""
+
+#: ../../app/post-type/course.php:5 ../../app/post-type/course.php:6
+#: ../../app/post-type/course.php:26
+msgid "Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:7
+msgid "Courses"
+msgstr ""
+
+#: ../../app/post-type/course.php:9
+msgid "All Courses"
+msgstr ""
+
+#: ../../app/post-type/course.php:10
+msgid "View Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:11
+msgid "Add New Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:13
+msgid "Edit Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:14
+msgid "Update Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:15
+msgid "Search Course"
+msgstr ""
+
+#: ../../app/post-type/course.php:27
+msgid "List of danse courses"
+msgstr ""
+
+#: ../../app/post-type/figure.php:10 ../../app/post-type/figure.php:11
+msgid "Figures"
+msgstr ""
+
+#: ../../app/post-type/figure.php:12
+msgid "Figure Archives"
+msgstr ""
+
+#: ../../app/post-type/figure.php:13
+msgid "Figure Attributes"
+msgstr ""
+
+#: ../../app/post-type/figure.php:14
+msgid "Parent Figure:"
+msgstr ""
+
+#: ../../app/post-type/figure.php:15
+msgid "All Figures"
+msgstr ""
+
+#: ../../app/post-type/figure.php:16
+msgid "Add New Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:18
+msgid "New Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:19
+msgid "Edit Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:20
+msgid "Update Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:21
+msgid "View Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:22
+msgid "View Figures"
+msgstr ""
+
+#: ../../app/post-type/figure.php:23
+msgid "Search Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:26 ../../app/post-type/video.php:26
+msgid "Featured Image"
+msgstr ""
+
+#: ../../app/post-type/figure.php:27 ../../app/post-type/video.php:27
+msgid "Set featured image"
+msgstr ""
+
+#: ../../app/post-type/figure.php:28 ../../app/post-type/video.php:28
+msgid "Remove featured image"
+msgstr ""
+
+#: ../../app/post-type/figure.php:29 ../../app/post-type/video.php:29
+msgid "Use as featured image"
+msgstr ""
+
+#: ../../app/post-type/figure.php:30
+msgid "Insert into Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:31
+msgid "Uploaded to this Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:32
+msgid "Figures list"
+msgstr ""
+
+#: ../../app/post-type/figure.php:33
+msgid "Figures list navigation"
+msgstr ""
+
+#: ../../app/post-type/figure.php:34
+msgid "Filter Figures list"
+msgstr ""
+
+#: ../../app/post-type/figure.php:37
+msgid "Figure"
+msgstr ""
+
+#: ../../app/post-type/figure.php:38
+msgid "List of figures, moves, techniques for dancing afro-latin music"
+msgstr ""
+
+#: ../../app/post-type/video.php:12
+msgid "Video Archives"
+msgstr ""
+
+#: ../../app/post-type/video.php:13
+msgid "Video Attributes"
+msgstr ""
+
+#: ../../app/post-type/video.php:14
+msgid "Parent Video:"
+msgstr ""
+
+#: ../../app/post-type/video.php:15
+msgid "All Videos"
+msgstr ""
+
+#: ../../app/post-type/video.php:16 ../../app/post-type/video.php:17
+msgid "Add New Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:18
+msgid "New Item Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:19
+msgid "Edit Item Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:20
+msgid "Update Item Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:21
+msgid "View Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:22
+msgid "View Videos"
+msgstr ""
+
+#: ../../app/post-type/video.php:23
+msgid "Search Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:30
+msgid "Insert into Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:31
+msgid "Uploaded to this video"
+msgstr ""
+
+#: ../../app/post-type/video.php:32
+msgid "Videos list"
+msgstr ""
+
+#: ../../app/post-type/video.php:33
+msgid "Videos list navigation"
+msgstr ""
+
+#: ../../app/post-type/video.php:34
+msgid "Filter Videos list"
+msgstr ""
+
+#: ../../app/post-type/video.php:37
+msgid "Video"
+msgstr ""
+
+#: ../../app/post-type/video.php:38
+msgid "List of dancefloor videos"
+msgstr ""
+
+#: ../../app/setup.php:43
+msgid "Primary Navigation"
+msgstr ""
+
+#: ../../app/setup.php:90
+msgid "Primary"
+msgstr ""
+
+#: ../../app/setup.php:94
+msgid "Footer"
+msgstr ""
+
+#: ../../app/setup.php:162 ../functions.php:113
+msgid "Teacher"
+msgstr "Instruktor"
+
+#: ../../app/setup.php:163 ../functions.php:114
+msgid "Assistant"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:13
+msgid "Parent Classroom"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:14
+msgid "Parent Classroom:"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:15
+msgid "New Classroom Name"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:20
+msgid "Separate Classrooms with commas"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:21
+msgid "Add or remove Classrooms"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:22 ../../app/taxonomy/day.php:22
+#: ../../app/taxonomy/level.php:22 ../../app/taxonomy/style.php:23
+msgid "Choose from the most used"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:23
+msgid "Popular Classrooms"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:24
+msgid "Search Classrooms"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:26
+msgid "No Classrooms"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:27
+msgid "Classrooms list"
+msgstr ""
+
+#: ../../app/taxonomy/classroom.php:28
+msgid "Classrooms list navigation"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:11
+msgid "Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:12
+msgid "All Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:13
+msgid "Parent Day"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:14
+msgid "Parent Day:"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:15
+msgid "New Day Name"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:16
+msgid "Add New Day"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:17
+msgid "Edit Day"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:18
+msgid "Update Day"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:19
+msgid "View Day"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:20
+msgid "Separate Days with commas"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:21
+msgid "Add or remove Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:23
+msgid "Popular Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:24
+msgid "Search Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:26
+msgid "No Days"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:27
+msgid "Days list"
+msgstr ""
+
+#: ../../app/taxonomy/day.php:28
+msgid "Days list navigation"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:11
+msgid "Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:12
+msgid "All Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:13
+msgid "Parent Level"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:14
+msgid "Parent Level:"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:15
+msgid "New Level Name"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:16
+msgid "Add New Level"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:17
+msgid "Edit Level"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:18
+msgid "Update Level"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:19
+msgid "View Level"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:20
+msgid "Separate Levels with commas"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:21
+msgid "Add or remove Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:23
+msgid "Popular Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:24
+msgid "Search Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:26
+msgid "No Levels"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:27
+msgid "Levels list"
+msgstr ""
+
+#: ../../app/taxonomy/level.php:28
+msgid "Levels list navigation"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:12
+msgid "Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:13
+msgid "All Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:14
+msgid "Parent Style"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:15
+msgid "Parent Style:"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:16
+msgid "New Style Name"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:17
+msgid "Add New Style"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:18
+msgid "Edit Style"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:19
+msgid "Update Style"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:20
+msgid "View Style"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:21
+msgid "Separate style with commas"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:22
+msgid "Add or remove Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:24
+msgid "Popular Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:25
+msgid "Search Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:27
+msgid "No Styles"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:28
+msgid "Styles list"
+msgstr ""
+
+#: ../../app/taxonomy/style.php:29
+msgid "Styles list navigation"
+msgstr ""
+
+#: ../../app/teachers.php:45
+msgid "Skills"
+msgstr "Plesovi"
 
 #: ../functions.php:17
 msgid "Sage &rsaquo; Error"
@@ -50,14 +610,6 @@ msgstr "Autoloader nije nađen."
 #: ../functions.php:59
 #, php-format
 msgid "Error locating <code>%s</code> for inclusion."
-msgstr ""
-
-#: ../functions.php:113
-msgid "Teacher"
-msgstr "Instruktor"
-
-#: ../functions.php:114
-msgid "Assistant"
 msgstr ""
 
 #: ../functions.php:120
@@ -189,7 +741,7 @@ msgstr "Datum završetka kursa"
 
 #: ../piklist/parts/meta-boxes/course.php:101
 msgid "Session period"
-msgstr "Ciklus"
+msgstr "Trajanje"
 
 #: ../piklist/parts/meta-boxes/course.php:126
 msgid "Start Time"
@@ -278,6 +830,10 @@ msgstr ""
 msgid "Display inscription button in course page:"
 msgstr ""
 
+#: ../piklist/parts/settings/design-settings.php:66
+msgid "Display either nickname or fullname:"
+msgstr ""
+
 #: ../piklist/parts/settings/general-settings.php:13
 msgid "Logo"
 msgstr "Logo"
@@ -347,10 +903,6 @@ msgstr "Vrste plesa"
 #: ../piklist/parts/users/profs.php:52
 msgid "Accomplishments"
 msgstr "Postignuća"
-
-#: ../views/course/section-classroom.blade.php:1
-msgid "Classroom"
-msgstr "Lokacija"
 
 #: ../views/course/section-classroom.blade.php:15
 msgid "Open on Google maps"
@@ -450,6 +1002,3 @@ msgstr "Naš tim"
 
 #~ msgid "Company Dancers"
 #~ msgstr "Show grupa"
-
-#~ msgid "Continued"
-#~ msgstr "Nastavljeno"
