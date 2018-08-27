@@ -17,18 +17,24 @@
           </td>
         </tr>
       </table>
-      <div class="alert alert-danger" role="alert">
-        <table>
-          <tr>
-            <td valign="top"><i class="fas fa-exclamation-circle"></i></td>
-            <td>
-              <strong> {{ _e('Attention','sage') }}</strong>
-               <br>
-               {{ __('Street shoes are not allowed in this classroom, please bring your own dancing shoes.', 'sage') }}
-            </td>
-          </tr>
-        </table>
-      </div>
+      @php
+      $shoes = get_term_meta($classroom[0]->term_id,'classroom_require_shoes');
+      //piklist::pre($shoes);
+      @endphp
+      @if ($shoes[0] == 'TRUE')
+        <div class="alert alert-danger" role="alert">
+          <table>
+            <tr>
+              <td valign="top"><i class="fas fa-exclamation-circle"></i></td>
+              <td>
+                <strong> {{ _e('Attention','sage') }}</strong>
+                <br>
+                {{ __('Street shoes are not allowed in this classroom, please bring your own dancing shoes.', 'sage') }}
+              </td>
+            </tr>
+          </table>
+        </div>
+      @endif
     </div>
     <div class="col-md-8 map">
       @php
