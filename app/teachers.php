@@ -36,7 +36,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
     <div class="card-body text-center">
       <?php $dancefloor_options = get_option('dancefloor_settings'); ?>
       <?php if ( $dancefloor_options['df_display_team_member_name'] == 'nickname'): ?>
-        <h4 class="card-title ttc"><?= esc_html( $nickname ); ?></h4>
+        <h4 class="card-title ttc"><?= esc_html( get_the_author_meta('display_name',$id) ); ?></h4>
       <?php else: ?>
         <h4 class="card-title"><?= esc_html( $first_name ); ?> <?= esc_html( $last_name ); ?></h4>
       <?php endif; ?>
