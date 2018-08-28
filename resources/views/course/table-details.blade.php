@@ -83,7 +83,7 @@
         @endif
       </td>
     @else
-      <td>{{ __('Dès','sage') . ' ' .  $price['currency'] . ' ' . $price['regular_price'] }}</td>
+      <td><?= __('Dès','sage') . ' ' .  $price['currency'] . ' ' . $price['regular_price'];?></td>
     @endif
   </tr>
 

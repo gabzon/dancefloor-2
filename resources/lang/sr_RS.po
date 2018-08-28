@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dancefloor\n"
-"POT-Creation-Date: 2018-08-21 10:49+0100\n"
+"POT-Creation-Date: 2018-08-28 15:03+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -575,7 +575,7 @@ msgstr ""
 msgid "Styles list navigation"
 msgstr ""
 
-#: ../../app/teachers.php:45
+#: ../../app/teachers.php:46
 msgid "Skills"
 msgstr "Plesovi"
 
@@ -927,6 +927,10 @@ msgstr "Potreban nivo"
 #: ../views/course/table-details.blade.php:68
 msgid "Not available"
 msgstr "Nije dostupno"
+
+#: ../views/course/table-details.blade.php:86
+msgid "Dès"
+msgstr "Od"
 
 #: ../views/homepage.blade.php:18
 msgid "News"
