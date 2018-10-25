@@ -38,7 +38,7 @@
 <br>
 <div class="price-explain">
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
       <h3 class="tc">Cours 1h00</h3>
       <table class="table tc">
         <thead>
@@ -99,7 +99,68 @@
         </tr>
       </table>
     </div>
-    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+      <h3 class="tc">Cours 1h15</h3>
+      <table class="table tc">
+        <thead>
+          <tr>
+            {{-- <th scope="col"># Cours</th> --}}
+            {{-- <th scope="col">Prix unité</th> --}}
+            <th scope="col">Nombre de cours</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tr>
+          {{-- <td>1</td> --}}
+          {{-- <td>CHF 25</td> --}}
+          <td>8</td>
+          <td>CHF 180</td>
+        </tr>
+        <tr>
+          {{-- <td>2</td> --}}
+          {{-- <td>CHF 26</td> --}}
+          <td>7</td>
+          <td>CHF 160</td>
+        </tr>
+        <tr>
+          {{-- <td>3</td> --}}
+          {{-- <td>CHF 27</td> --}}
+          <td>6</td>
+          <td>CHF 145</td>
+        </tr>
+        <tr>
+          {{-- <td>4</td> --}}
+          {{-- <td>CHF 28</td> --}}
+          <td>5</td>
+          <td>CHF 130</td>
+        </tr>
+        <tr>
+          {{-- <td>5</td> --}}
+          {{-- <td>CHF 29</td> --}}
+          <td>4</td>
+          <td>CHF 110</td>
+        </tr>
+        <tr>
+          {{-- <td>6</td> --}}
+          {{-- <td>CHF 31</td> --}}
+          <td>3</td>
+          <td>CHF 85</td>
+        </tr>
+        <tr>
+          {{-- <td>7</td> --}}
+          {{-- <td>CHF 32</td> --}}
+          <td>2</td>
+          <td>CHF 60</td>
+        </tr>
+        <tr>
+          {{-- <td>8</td> --}}
+          {{-- <td>CHF 35</td> --}}
+          <td>1</td>
+          <td>CHF 30</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
       <h3 class="tc">Cours 1h30</h3>
       <table class="table tc">
         <thead>
@@ -144,7 +205,7 @@
           {{-- <td>6</td> --}}
           {{-- <td>CHF 31</td> --}}
           <td>3</td>
-          <td>CHF 95</td>
+          <td>CHF 90</td>
         </tr>
         <tr>
           {{-- <td>7</td> --}}
