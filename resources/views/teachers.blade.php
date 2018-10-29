@@ -5,12 +5,20 @@ Template Name: Teachers
 @extends('layouts.app')
 
 @section('content')
+
+
+
     @while (have_posts()) @php(the_post())
         {{-- @include('partials.page-header') --}}
         {{-- @include('partials.content-page') --}}
     @endwhile
 
+    @include('team.team')
+
     @php( $profs = get_users( 'role=teacher' ) )
+    @php
+      //Piklist::pre($profs);
+    @endphp
     @php( $indice = 100 )
     @php( $i = 0 )
     {{-- __('Company Dancers','sage') --}}
