@@ -56,6 +56,8 @@ Dancefloor 2 is a WordPress theme the dancefloor danceschool. It is based on the
 * Teacher title (roles)
 * display Schedule mobile
 * display feature image in course single
+* Added Team template
+* added new section for team page, team sorting
 
 ## Version 2.3
 * Display correct Form according to the classes/Workshops , needs gravity form id (Default '23')
