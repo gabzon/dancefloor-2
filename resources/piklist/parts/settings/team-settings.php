@@ -36,7 +36,7 @@ $teamteam_section_users = [
 piklist('field', array(
   'type'        => 'group',
   'field'       => 'team_group',
-  'label'       => __('Address (Grouped)', 'piklist-demo'),
+  'label'       => __('Section', 'piklist-demo'),
   'list'        => false,
   'description' => __('A grouped field with the field parameter set.', 'piklist-demo'),
   'fields'      => [ $team_section_title, $teamteam_section_users ],
