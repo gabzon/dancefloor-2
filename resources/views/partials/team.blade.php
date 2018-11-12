@@ -15,6 +15,7 @@ $team_section = $dancefloor_options['team_group'];
         @php( $photo = ($photos ? $photos[0] : '') )
         @php( $title = get_user_meta($user->ID,'title', true) )
         @php( display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description, $user->user_nicename) )
+        @php( $indice++ )
       </div>
     @endforeach
   </div>
