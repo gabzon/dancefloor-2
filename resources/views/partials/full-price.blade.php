@@ -59,13 +59,13 @@
           {{-- <td>2</td> --}}
           {{-- <td>CHF 21</td> --}}
           <td>7</td>
-          <td>CHF 147</td>
+          <td>CHF 145</td>
         </tr>
         <tr>
           {{-- <td>3</td> --}}
           {{-- <td>CHF 22</td> --}}
           <td>6</td>
-          <td>CHF 132</td>
+          <td>CHF 130</td>
         </tr>
         <tr>
           {{-- <td>4</td> --}}
