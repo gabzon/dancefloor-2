@@ -76,6 +76,7 @@ array_map(function ($file) use ($sage_error) {
   // 'post-type/video',
   'post-type/figure',
   'admin-filters/course-filters',
+  'tgm-required-plugins'
 ]);
 /**
 * Here's what's happening with these hooks:
