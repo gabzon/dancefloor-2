@@ -108,6 +108,11 @@ function pf_register_required_plugins() {
       'slug'      => 'jetpack',
       'required'  => false,
     ),
+    array(
+      'name'      => 'The SEO Framework',
+      'slug'      => 'autodescription',
+      'required'  => false,
+    ),
 
     array(
       'name'         => 'WPGraphQL',
