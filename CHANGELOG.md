@@ -44,6 +44,9 @@
 - Graphic multicolors
 - Ajouter un text quand les stages sont vides (et partout ou il y a une boucle)
 
+### 2.4.13: December 20th, 2018
+* Contact template with multiple location added
+
 ### 2.4.12: November 19th, 2018
 
 * Kirki plugin installation using TGM Plugin [Video Tutorial](https://www.youtube.com/watch?v=9MlSGIT5B9A&list=PLjiw4DZope5Cin-FQ13Qyu2m9sxCkTVVp)

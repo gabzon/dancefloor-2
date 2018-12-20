@@ -85,6 +85,20 @@ piklist('field', array(
 ));
 
 piklist('field', array(
+    'type' => 'select',
+    'field' => 'classroom_type',
+    'value' => 'classroom',
+    'label' => 'Classroom Type',
+    'description' => __('Define if this is a main studio or a classroom','sage'),
+    'choices' => [
+      'classroom' => 'Classroom',
+      'studio'    => 'Studio'
+      ]
+));
+
+
+
+piklist('field', array(
     'type' => 'file',
     'field' => 'classroom_photos',
     'label' => __('Add Photo(s)','piklist'),

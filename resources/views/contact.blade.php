@@ -29,51 +29,55 @@ Template Name: Contact
           </table>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             @foreach ($classroom as $key => $value)
-              <a class="nav-link pa0" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
-                <table class="table table-responsive table-classroom mb0" style="border-top:0; border-color:red;">
-                  <tr>
-                    <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
-                    <td width="95%">
-                      <strong>{{ $classroom[$key]->name }}</strong><br>
-                      <?= get_term_meta($classroom[$key]->term_id,'classroom_address',true); ?> ({{ get_term_meta($classroom[$key]->term_id ,'classroom_quartier',true) }})<br>
-                      <?= get_term_meta($classroom[$key]->term_id,'classroom_postal_code',true) . ', ' . get_term_meta($classroom[$key]->term_id,'classroom_ville',true); ?><br>
-                    </td>
-                  </tr>
-                </table>
-              </a>
+              @if ( get_term_meta($value->term_id,'classroom_type',true) == "studio" )
+                <a class="nav-link pa0" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
+                  <table class="table table-responsive table-classroom mb0" style="border-top:0; border-color:red;">
+                    <tr>
+                      <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
+                      <td width="95%">
+                        <strong>{{ $classroom[$key]->name }}</strong><br>
+                        <?= get_term_meta($classroom[$key]->term_id,'classroom_address',true); ?> ({{ get_term_meta($classroom[$key]->term_id ,'classroom_quartier',true) }})<br>
+                        <?= get_term_meta($classroom[$key]->term_id,'classroom_postal_code',true) . ', ' . get_term_meta($classroom[$key]->term_id,'classroom_ville',true); ?><br>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              @endif
             @endforeach
           </div>
         </div>
         <div class="col-12 col-sm-8 col-md-8 col-lg-8">
           <div class="tab-content" id="v-pills-tabContent">
             @foreach ($classroom as $key => $value)
-              <div class="tab-pane fade show" id="v-pills-{{ $classroom[$key]->slug }}" role="tabpanel" aria-labelledby="v-pills-{{ $classroom[$key]->slug }}-tab">
-                @php
-                echo get_term_meta($classroom[0]->term_id,'classroom_google_map',true)
-                @endphp
-                <a href="<?= get_term_meta($classroom[$key]->term_id,'classroom_google_map_link',true); ?>" target="_blank">
-                  <?php _e('Open on Google maps','sage'); ?>
-                </a>
-                @php
-                $shoes = get_term_meta($classroom[$key]->term_id,'classroom_require_shoes');
-                @endphp
-                @if ($shoes[0] == 'TRUE')
-                  <br>
-                  <br>
-                  <div class="alert alert-danger" role="alert">
-                    <table>
-                      <tr>
-                        <td valign="top"><i class="fas fa-exclamation-circle"></i></td>
-                        <td>
-                          <strong> {{ _e('Attention','sage') }}</strong>
-                          <br>
-                          {{ __('Street shoes are not allowed in this classroom, please bring your own dancing shoes.', 'sage') }}
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                @endif
-              </div>
+              @if ( get_term_meta($value->term_id,'classroom_type',true) == "studio")
+                <div class="tab-pane fade show" id="v-pills-{{ $classroom[$key]->slug }}" role="tabpanel" aria-labelledby="v-pills-{{ $classroom[$key]->slug }}-tab">
+                  @php
+                  echo get_term_meta($classroom[0]->term_id,'classroom_google_map',true)
+                  @endphp
+                  <a href="<?= get_term_meta($classroom[$key]->term_id,'classroom_google_map_link',true); ?>" target="_blank">
+                    <?php _e('Open on Google maps','sage'); ?>
+                  </a>
+                  @php
+                  $shoes = get_term_meta($classroom[$key]->term_id,'classroom_require_shoes');
+                  @endphp
+                  @if ($shoes[0] == 'TRUE')
+                    <br>
+                    <br>
+                    <div class="alert alert-danger" role="alert">
+                      <table>
+                        <tr>
+                          <td valign="top"><i class="fas fa-exclamation-circle"></i></td>
+                          <td>
+                            <strong> {{ _e('Attention','sage') }}</strong>
+                            <br>
+                            {{ __('Street shoes are not allowed in this classroom, please bring your own dancing shoes.', 'sage') }}
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  @endif
+                </div>
+              @endif
             @endforeach
           </div>
         </div>
