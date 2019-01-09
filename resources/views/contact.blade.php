@@ -28,9 +28,15 @@ Template Name: Contact
             </tr>
           </table>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            @php $active = 'active'; @endphp
             @foreach ($classroom as $key => $value)
               @if ( get_term_meta($value->term_id,'classroom_type',true) == "studio" )
-                <a class="nav-link pa0" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
+                @if ($key == 0)
+                  @php $active = 'active'; @endphp
+                @else
+                  @php $active = ''; @endphp
+                @endif
+                <a class="nav-link pa0 {{$active}}" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
                   <table class="table table-responsive table-classroom mb0" style="border-top:0; border-color:red;">
                     <tr>
                       <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
@@ -45,12 +51,18 @@ Template Name: Contact
               @endif
             @endforeach
           </div>
+          <div class="mv2"></div>
         </div>
         <div class="col-12 col-sm-8 col-md-8 col-lg-8">
           <div class="tab-content" id="v-pills-tabContent">
             @foreach ($classroom as $key => $value)
+              @if ($key == 0)
+                @php $active = 'active'; @endphp
+              @else
+                @php $active = ''; @endphp
+              @endif
               @if ( get_term_meta($value->term_id,'classroom_type',true) == "studio")
-                <div class="tab-pane fade show" id="v-pills-{{ $classroom[$key]->slug }}" role="tabpanel" aria-labelledby="v-pills-{{ $classroom[$key]->slug }}-tab">
+                <div class="tab-pane fade show {{$active}}" id="v-pills-{{ $classroom[$key]->slug }}" role="tabpanel" aria-labelledby="v-pills-{{ $classroom[$key]->slug }}-tab">
                   @php
                   echo get_term_meta($classroom[0]->term_id,'classroom_google_map',true)
                   @endphp
