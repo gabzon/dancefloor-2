@@ -28,27 +28,27 @@ Template Name: Contact
             </tr>
           </table>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            @php $active = 'active'; @endphp
             @foreach ($classroom as $key => $value)
+              @php $active = ''; @endphp
               @if ( get_term_meta($value->term_id,'classroom_type',true) == "studio" )
                 @if ($key == 0)
                   @php $active = 'active'; @endphp
                 @else
                   @php $active = ''; @endphp
                 @endif
-                <a class="nav-link pa0 {{$active}}" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
-                  <table class="table table-responsive table-classroom mb0" style="border-top:0; border-color:red;">
-                    <tr>
-                      <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
-                      <td width="95%">
-                        <strong>{{ $classroom[$key]->name }}</strong><br>
-                        <?= get_term_meta($classroom[$key]->term_id,'classroom_address',true); ?> ({{ get_term_meta($classroom[$key]->term_id ,'classroom_quartier',true) }})<br>
-                        <?= get_term_meta($classroom[$key]->term_id,'classroom_postal_code',true) . ', ' . get_term_meta($classroom[$key]->term_id,'classroom_ville',true); ?><br>
-                      </td>
-                    </tr>
-                  </table>
-                </a>
               @endif
+              <a class="nav-link pa0 {{$active}}" id="v-pills-{{ $classroom[$key]->slug }}-tab" data-toggle="pill" href="#v-pills-{{ $classroom[$key]->slug }}" role="tab" aria-controls="v-pills-{{ $classroom[$key]->slug }}" aria-selected="true">
+                <table class="table table-responsive table-classroom mb0" style="border-top:0; border-color:red;">
+                  <tr>
+                    <td width="5%"><i class="fa fa-home" aria-hidden="true"></i></td>
+                    <td width="95%">
+                      <strong>{{ $classroom[$key]->name }}</strong><br>
+                      <?= get_term_meta($classroom[$key]->term_id,'classroom_address',true); ?> ({{ get_term_meta($classroom[$key]->term_id ,'classroom_quartier',true) }})<br>
+                      <?= get_term_meta($classroom[$key]->term_id,'classroom_postal_code',true) . ', ' . get_term_meta($classroom[$key]->term_id,'classroom_ville',true); ?><br>
+                    </td>
+                  </tr>
+                </table>
+              </a>
             @endforeach
           </div>
           <div class="mv2"></div>
