@@ -1,4 +1,4 @@
-<article @php(post_class())>
+<article @php(post_class())>  
   @if ( has_post_format( 'video' ) )
 
     <div class="card">
